@@ -1,0 +1,28 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: orange;
+    top: 50px;
+    z-index: 1;
+}
+.div1:hover{
+    z-index: 5;
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(38, 0, 255);
+    top: 25px;
+    z-index: 1;
+}
+
+.div3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(255, 0, 64);
+    z-index: 1;
+}

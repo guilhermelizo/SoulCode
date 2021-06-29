@@ -1,0 +1,26 @@
+*{margin:0}
+.div1{
+    width: 50%;
+    height: 400px;
+    background-color: blue;
+}
+.div2{
+    width: 25%;
+    height: 400px;
+    background-color: brown;
+}
+.div3{
+    width: 200px;
+    height: 400px;
+    background-color:blueviolet;
+}
+.div4{
+    width: 20%;
+    height: 400px;
+    background-color:cadetblue;
+}
+.div5{
+    width: 20%;
+    height: 400px;
+    background-color:rgb(107, 95, 160);
+}

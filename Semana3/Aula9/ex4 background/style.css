@@ -1,0 +1,41 @@
+.exemplo1{
+    border: solid 5px #123321;
+    padding: 80px;
+    border-radius:50px;
+    width: 300px;
+    height: 300px;
+    text-align: right;
+    color: white;
+    font-size: x-large;
+    background-image: url("soul.png");
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.exemplo3{
+    border-width: 10px;
+
+    border-top-style: dashed;
+    border-top-color: blueviolet;
+
+    border-left-style: dashed;
+    border-left-color: blue;
+
+    border-bottom-style:solid;
+    border-bottom-color:darkorange ;
+
+    border-right-style: ridge;
+    border-right-color: aqua;
+}
+
+.exemplo2{
+    border-left: dashed 10px #acb123;
+    border-top: solid 5px #fff123;
+    border-bottom: ridge 20px #bbe454;
+    border-right: solid 5px #146312;
+}
+
+body{
+    background: url("soul.png");
+    background-attachment: fixed;  /* Deixa o bg fixo, rolando apenas o conteúdo */
+}

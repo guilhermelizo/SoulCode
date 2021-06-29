@@ -1,0 +1,22 @@
+header {
+   background: rgba(128, 0, 128, 0);
+   backdrop-filter: blur(5px);
+   width: 100%;
+   height: 15vh;
+   padding-top: 1.5em;
+   text-align: center;
+
+}
+
+.linksoulcode div{
+   width: 100%;
+   height: 12vh;
+   background: url('../img/bibliotecasftm.png')  center center / contain no-repeat;
+
+} 
+
+.linksoulcode{
+   width: 30%;
+   height: 12vh;
+
+}

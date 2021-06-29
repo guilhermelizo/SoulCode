@@ -1,0 +1,43 @@
+div:nth-child(1) {                 
+    background: red;
+  }
+  div:nth-last-child(2) {             
+    background: #ab82ff;
+  }
+  li:nth-of-type(1) {
+    color: green;
+  }
+  li:nth-last-of-type(1) {
+    color: yellow;
+  }
+  div:last-child {
+    background: rgb(238, 41, 189);
+  }
+  div:first-of-type {
+    border: solid 5px green;
+  }
+  div:last-of-type {
+    border: solid 5px brown;
+  }
+  p:only-child {
+    font-size: 50px;
+  }
+  ul:only-of-type {
+    text-decoration: underline;
+  }
+  
+
+  /* EXPLICAÇÃO: 
+
+  :root: seleciona o elemento raiz do documento, no caso, é a tag HTML.
+E:nth-child(N): seleciona o elemento do tipo E que seja o N-ésimo filho do seu elemento pai.
+E:nth-last-child(N): semelhante ao anterior, mas começando a contagem de baixo para cima.
+E:nth-of-type(N): seleciona o elemento que seja o N-ésimo do seu tipo.
+E:nth-last-of-type(N): semelhante ao anterior, mas contando de baixo para cima.
+E:last-child: seleciona o elemento E que seja o último filho do elemento pai.
+E:first-of-type: seleciona o elemento E que seja o primeiro de seu tipo dentro do elemento pai.
+E:last -of-type: semelhante ao anterior, mas com o último elemento.
+E:only-child: seleciona o elemento E que seja o único filho do seu elemento pai.
+E:only-of-type: seleciona o elemento que seja o único filho deste tipo dentro de seu elemento pai.
+
+*/

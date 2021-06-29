@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+.obrigatorio{
+    color: green;
+    background-color: greenyellow;
+}
+
+.agosto{
+    color: blue;
+    background-color: aquamarine;
+}
+
+li {
+    list-style-type: none;
+}

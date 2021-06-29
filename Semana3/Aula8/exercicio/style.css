@@ -1,0 +1,44 @@
+h1{
+    color:violet;
+    background-color: tomato;
+}
+
+p{
+    color:brown;
+    background-color: burlywood;
+}
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ #titulo{ /*iSTO É UM ID */
+    font-size: 40px;
+    color: indigo;
+}
+
+#subtitulo{
+    font-size: 20px;
+
+}
+
+#pdark{
+    color: azure;
+    background-color: black;
+    font-size: 12px;
+}
+
+#prosa{
+    color: antiquewhite;
+    background-color: darkmagenta;
+    font-size: 9px;
+}
+
+.caixa { /*iSTO É UMA CLASSE */
+    background-color: rgba(0, 0, 0, 0.247);
+    color: blanchedalmond;
+}
+
+.caixa p{
+    background-color: coral;
+}

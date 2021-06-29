@@ -1,0 +1,35 @@
+.div1{
+    background-color: #234234;
+    border: 20px 10px 20px 25px;
+    border-style: dashed;
+    
+}
+
+.div1 h1{
+    background-color: #abc123;
+    padding: 60px;
+}
+
+.div1 p{
+    padding: 30px 50px;
+    background-color: #afe444;
+}
+
+.div2{
+    border: 1px solid;
+    background-color: #bbb000;
+    border-radius: 30px;
+    padding: 100px 80px 100px 60px;
+
+}
+
+.div2 h1{
+    background-color: #abc123;
+    padding: 30px;
+    margin: 10px 50px 80px 100px
+}
+
+.div2 p{
+    background-color: #afe444;
+    padding: 30px 50px;
+}

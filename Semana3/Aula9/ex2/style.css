@@ -1,0 +1,26 @@
+.exemplo1{
+  color: rgb(223, 16, 16);
+  background-color: rgb(14, 241, 52);
+  font-family: 'comics sans', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  font-variant: small-caps;
+}
+
+.exemplo2{
+  font-style: oblique;
+  font-size: 50px;
+}
+
+.exemplo3{
+  font-style: italic;
+  font-size: 50px;
+}
+
+.exemplo4{
+  font-style: italic;
+}
+
+.exemplo6{
+  text-align: center;
+}
+
