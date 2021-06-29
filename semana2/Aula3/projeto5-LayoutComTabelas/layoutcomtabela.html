@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade Layout com Tabelas</title>
+
+    <style>
+        td{
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+
+    
+</head>
+
+<body>
+    <h1> Atividade Layout com Tabelas </h1>
+
+    <!-- AQUI ABRE A TABELA PRETA ( PRINCIPAL )-->
+    <table style="border: black 5px solid; border-spacing: 10px; margin: 0px auto;"> <!-- Tabela principal-->
+        <tr>
+            <td style="vertical-align: top;">
+
+        <table style="border: red 5px solid; border-collapse: collapse; width: 100%"> <!-- Tabela vermelha-->
+            <tr>
+                <td style="border: red 5px solid; width: 10%;  height: 90px;"> <img src="img.jpg" style="width: 100px"/>
+                <td style="border: red 5px solid;width: 90%; color: red;"> Lorem ipsum dolor sit amet consectetur  <br> 
+                    adipisicing elit. Quibusdam ab consectetur  <br> 
+                    repudiandae aliquid provident non, laboriosam <br> 
+                     mollitia incidunt officiis nihil, ad, laborum <br> 
+                     tempora repellat obcaecati doloremque pariatur qui <br /> distinctio corporis? </td>
+             </tr>
+             
+        </table> <!-- Final tabela Vermelha -->
+    </td></tr> 
+
+    <tr><td style="vertical-align: top;">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+         <table style="border: rgb(29, 253, 29) 5px solid; width: 100%; height: 100%; border-collapse: collapse; "> <!-- Tabela VERDE-->
+            <tr>
+                <td style="border: rgb(29, 253, 29) 5px solid; color: rgb(29, 253, 29); vertical-align:top; width: 20%;"> Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Architecto illo at sequi <br /> dignissimos minus! Tempora magnam cumque de<br /> s facilis aliquid voluptates eos, omnis verit<br />  nisi culpa perspiciatis quam, explicabo totam.</td>
+                <td> 
+
+                    <!-- TABELA AZUL-->
+                    <table style="border-spacing: 15px; color: blue;"> 
+                       
+                        <tr>
+                            <td colspan="2" style="border: blue 5px solid;">
+                                &nbsp;
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="border: blue 5px solid;"> Lorem ipsum, dolor sit a<br /> consectetur adipisicing elit. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                Blanditiis quibusdam corporis<br />  iusto odit ex ipsum dolores n<br /> am, natus, quas vitae tempora cum<br /> e soluta exercitationem, eum fa<br />  ipsam at. </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="border: blue 5px solid;">
+                                &nbsp;
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td style="border: blue 5px solid;"> 
+                                Lorem ipsum, dolor sit a<br /> consectetur adipisicing elit. Blanditiis quibusdam corporis<br />  iusto odit ex ipsum dolores n<br /> am, natus, quas vitae tempora cum<br /> e soluta exercitationem, eum fa<br />  ipsam at.  </td>
+                            <td style="border: blue 5px solid;"> Lorem ipsum, dolor sit a<br /> consectetur adipisicing elit. Blanditiis quibusdam corporis<br />  iusto odit ex ipsum dolores n<br /> am, natus, quas vitae tempora cum<br /> e soluta exercitationem, eum fa<br />  ipsam at. </td>
+                        </tr>
+
+                        
+                    </table> <!-- FINAL TABELA AZUL-->
+                
+                </td>
+            </tr>
+         </table> <!-- FINAL TABELA VERDE-->
+        
+
+
+</td></tr> 
+</table>  <!-- FINAL TABELA PRETA (TABELA PRINCIPAL)-->
+</body>
+</html>

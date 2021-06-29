@@ -1,0 +1,120 @@
+
+figcaption{
+  text-align: center;
+  
+}
+
+aside{
+  text-align: center;
+  justify-content: center;
+}
+
+/** AQUI COMEÇA AS CONFIGURAÇÕES DO MENU HORIZONTAL **/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    
+    margin: 30px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    
+  }
+  .menu {
+    justify-content: center;
+    display: flex;
+    padding: 1px 150px;
+    list-style: none;
+    border: 10px solid #c0c0c0;
+    
+  }
+  .menu li {
+    padding: 5px 5px;
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+  }
+  .menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+  }
+  .menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #ccc;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+  }
+
+  .menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+  }
+  .menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+  }
+
+  /** AQUI ACABA AS CONFIGURAÇÕES DO MENU HORIZONTAL **/
+h1
+{
+  text-align: justify;
+  color: black;
+}
+
+h2
+{
+  color: black;
+}
+
+h3
+{
+  color: black;
+  text-align: center;
+}
+p
+{
+  color: #E2144A;
+  border: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+ul li {
+    position: relative;
+}
+
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #E2144A;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    }

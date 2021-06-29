@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment Form </title>
+
+    <style>
+        
+        div{
+            margin: 05px;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+        <form action="/Payment Form"    method="POST">
+        <fieldset  style="border-radius: 50px; width: 25%; text-align: center;">
+        <legend> <h1> Payment Form </h1></legend>
+
+        <h4>Os campos requeridos são seguidos por *</h4>
+        
+        <h2> Informações de Contato </h2>
+
+        <div> <!-- CAMPO DE TITULO -->
+            <fieldset> 
+                <legend>Titulo </legend>
+                <input type="radio" name="titulo" id="burgues">
+                <label for="titulo"> Burguês </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="radio" name="titulo" id="burgues">
+                <label for="titulo"> Assariado </label>
+            </fieldset>
+
+            <fieldset> 
+                <input type="radio" name="titulo" id="burgues">
+                <label for="titulo"> Plebe </label>
+            </fieldset>
+        </div>
+
+        <div> <!-- CAMPOS DE IDENTIFICAÇÃO -->
+            <label for="nome"> Nome: </label>
+            <input type="text" id="nome" size="22" required autofocus>
+        </div>
+        <div>
+            <label for="email"> E-mail: </label>
+            <input type="email" name="email" maxlength="22" size="22" required>
+        </div>
+
+        <div>
+            <label for="senha"> senha: </label>
+            <input type="password" name="senha" maxlength="8" size="22" required>
+        </div> 
+
+        <hr> 
+        <!-- INFORMAÇÕES DE PAGAMENTO-->
+       
+        <div>
+        <fieldset> 
+            <legend> <h3> Informações de Pagamento: </h3></legend> 
+               <label for="cartao">Card type:</label>
+               
+               <select name="cartao" id="cartao">
+                  <option value="-">Estado </option>
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="americanexpress">American Express</option>
+                  <option value="vr">Vale Refeição</option>
+               </select>
+            
+        </fieldset>
+
+        
+        <fieldset> 
+            <label for="cartao"> Número do Cartão: </label>
+            <input type="text" name="cartao" id="cartao">
+        </fieldset>
+
+        <fieldset> 
+            <label for="vencimento"> Data de Venc. </label>
+            <input type="date" name="vencimento" id="vencimento">
+        </fieldset>
+          </div> <br>
+
+        <div class="buttom">
+            <button type="submit"> Enviar Mensagem </button>
+        </div>
+        
+
+        
+            
+    </fieldset>
+    </form>  
+</body>
+</html>

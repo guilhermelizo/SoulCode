@@ -1,0 +1,188 @@
+<!-- PAGINA PARA CONSTRUIR -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../projetoCineSoulCode/imagens/icon.jpeg" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro de Assinatura / Próximos Lançamentos </title>
+
+    <style>
+        
+        div{
+            margin: 05px;
+        }
+        
+        
+    </style>
+
+</head>
+<body style="background-color: cornflowerblue;">
+    <header style="text-align: center; background-color: black; border: black 2px solid; -ms-flex-align: center;">
+        <img src="../projetoCineSoulCode/imagens/cinesoulcode.jpg" style="width: 50%;"/>
+       </header>
+
+
+<main style="width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column;">
+    <!-- INICIO MENU HORIZONTAL -->
+    <nav> 
+
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+
+     <li>
+        <a href="series.html">Séries:  </a>
+        <ul>
+          <li><a href="serieComedia.html"> Comédia </a></li>  
+          <li><a href="serieFiccao.html"> Ficção </a></li> 
+          <li><a href="serieTerror.html"> Terror </a></li> 
+        </ul>
+      </li>
+
+      <li>
+        <a href="filmes.html">Filmes: </a>
+        <ul>
+          <li><a href="filmeComedia.html">Comédia </a></li> 
+          <li><a href="filmesFiccao.html">Ficção </a></li> 
+          <li><a href="filmesTerror.html">Terror</a></li> 
+        </ul>
+      </li>
+      <li><a href="formcadastro.html">Cadastro</a></li>
+      <li> <input type="search"> <input type="button" value="buscar">  </li>
+      </ul>
+     </nav> 
+     
+     <!-- AQUI ACABA  O MENU HORIZONTAL!!!!!!  -->
+    <Table>
+        <tr> <td rowspan="2" style="width: 40px;">
+        
+     
+
+    
+        <form action="/Payment Form"    method="POST">
+        <fieldset  style="border-radius: 50px; width: 25%; text-align: center;">
+        <legend> <h1> Cadastro: </h1></legend>
+
+        <h4>Os campos requeridos são seguidos por *</h4>
+        
+        <h2> Informações de Contato </h2>
+
+        <div> <!-- CAMPO DE TITULO -->
+            <fieldset> 
+                <legend>Titulo </legend>
+                <input type="radio" name="titulo" id="titulo">
+                <label for="titulo"> Sr.  </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="radio" name="titulo" id="titulo">
+                <label for="titulo"> Sra. </label>
+            </fieldset>
+
+            
+        </div>
+
+        <div> <!-- CAMPOS DE IDENTIFICAÇÃO -->
+            <label for="nome"> Nome: </label>
+            <input type="text" id="nome" size="22" required autofocus>
+        </div>
+        <div>
+            <label for="email"> E-mail: </label>
+            <input type="email" name="email" maxlength="22" size="22" required>
+        </div>
+
+        <div>
+            <label for="senha"> senha: </label>
+            <input type="password" name="senha" maxlength="8" size="22" required>
+        </div> 
+
+        <hr> 
+        <!-- INFORMAÇÕES DE PAGAMENTO-->
+       
+        <div>
+        <fieldset> 
+            <legend> <h3> Informações de Pagamento: </h3></legend> 
+               <label for="cartao"> Cartão: </label>
+               
+               <select name="cartao" id="cartao">
+                  <option value="-"> Cartão </option>
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="americanexpress">American Express</option>
+                  <option value="vr">Vale Refeição</option>
+               </select>
+            
+        </fieldset>
+
+        
+        <fieldset> 
+            <label for="cartao"> Número do Cartão: </label>
+            <input type="text" name="cartao" id="cartao">
+        </fieldset>
+
+        <fieldset> 
+            <label for="vencimento"> Data de Venc. </label>
+            <input type="date" name="vencimento" id="vencimento">
+        </fieldset>
+          </div> <br>
+
+        <div class="buttom">
+            <button type="submit"> Enviar Mensagem </button>
+        </div>
+          
+    </fieldset>
+
+</Main> </td> </tr> <!-- FECHAMENTO TD DO CADASTRO -->
+
+
+<!--ABERTURA TD DOS LANÇAMENTOS-->
+<td> <h3> Proximos LANÇAMENTOS do mês de junho!!! </h3> <hr>
+    <table>
+        
+            <section> <tr>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/riviera.png" alt="Riviera"> <figcaption> Riviera</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/walker.png" alt="Walker"> <figcaption> Walker</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/umanoitemuitolouca.png" alt="Uma Noite Muito Louca"> <figcaption> Uma Noite Muito Louca</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/riverdale.png" alt="Riverdale"> <figcaption> Riverdale</figcaption>  </article></td>
+            
+            </tr>
+            <tr>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/thewalkingdead.png" alt="The Walking Dead"> <figcaption> The Walking Dead</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/station19.png" alt="Station19"> <figcaption> Station 19</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/shingekinokyojin.png" alt="Shingeki no Kyojin"> <figcaption> Shingeki no Kyojin</figcaption>  </article></td>
+                <td> <article> <img src="../projetoCineSoulCode/imagens/lancamentos/homemaranha.png" alt="Homem Aranha"> <figcaption> Homem Aranha</figcaption>  </article></td>
+             </tr>
+                    
+
+            </section>
+     </table> </td>
+
+
+
+
+
+    
+<tr> <!-- ABERTURA DA LINHA ONDE VAI O FOOTER-->  <br> 
+  <td colspan="4">
+<foother>
+<table> <!-- ABERTURA TABELA DO FOOTER-->
+  <tr>
+    <td><img src="../projetoCineSoulCode/imagens/rodape.jpg"/> </td>
+    
+    <td style="background-color: rgb(101, 235, 190); border: blue;"><h3> Quer saber mais sobre a SoulCode? <br>
+      <a href="https://soulcodeacademy.org/"> Clique aqui: Site Oficial Soulcode </a> <br>
+      <a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br"> Linkedin SoulCode Academy</a> <br>
+      <a href="https://www.facebook.com/SoulCodeAcademy/"> Facebook SoulCode Academy</a> <br>
+      <a href="https://www.instagram.com/soulcodeacademy/"> Instagram @soulcodeacademy</a> <br>
+    </h3></td>
+         
+  </tr>
+  </table> <!-- FECHAMENTO TABELA DO FOOTER-->
+</foother> <!--FECHAMENTO FOOTER-->
+</td>
+</tr>
+</table> <!--FECHAMENTO TABELA PRINCIPAL QUE ENVELOPA O SITE -->

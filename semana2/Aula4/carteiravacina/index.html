@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        html {
+          font-family: sans-serif;
+        }
+         table
+         {
+             align-items: center;
+             text-align: center;
+             padding: 5px solid;
+             margin: 10px solid;
+             border: black 5px solid;
+             border-spacing: 8px;
+            
+            
+         }
+
+         td
+         {
+             align-items: center;
+             text-align: center;
+             padding: 5px solid;
+             margin: 10px solid;
+             border: black 3px solid;
+             
+         }
+
+         
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+   
+    <form action="/pagina-processa-dados-do-form" method="post"></form>
+    <fieldset style="text-align: center;"><legend> Formulário de vacinação (Atualizado 10/06/2021)</legend>
+    <Table>
+        <tr> 
+             <div><td colspan="2">  <label for="name"> Nome: </label> <input type="text" id="name" required autofocus/> </td> </div>
+              <div><td colspan="2">  <label for="dataatendimento"> Data de Atendimento: </label> <input type="date" id="dataatendimento" required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="datanascimento"> Data de Nascimento: </label> <input type="date" id="datanascimento" required /> </td> </div>
+              <div><td colspan="2">  <label for="tiposanguineo"> Tipo Sanguíneo: </label> <input type="text" id="tiposanguineo" required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="telefone"> Telefone: </label> <input type="number" id="telefone" required /> </td> </div>
+              <div><td colspan="2">  <label for="fatorrh"> Fator RH: </label> <input type="text" id="fatorrh" required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="email"> E-mail:</label> <input type="text" id="email" required /> </td> </div>
+              <div><td colspan="2">  <label for="vacinasaplicadas"> Vacinas Aplicadas:</label> <input type="text" id="vacinasaplicadas" required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="rua"> Rua: </label> <input type="text" id="rua"required /> </td> </div>
+              <div><td colspan="2">  <label for="comorbidade"> Comorbidade: </label> <input type="text" id="comorbidade"required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="numero"> Numero:</label> <input type="number" id="numero"required /> </td> </div>
+              <div><td colspan="2">  <label for="contatoemergencia"> Contato de Emergência:</label> <input type="number" id="contatoemergencia" required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="bairro"> Bairro: </label> <input type="text" id="bairro" required/> </td> </div>
+              <div><td colspan="2">  <label for="prioridadeatendimento"> Prioridade de Atendimento</label> <input type="color" id="prioridadeatendimento" required/> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="cep"> CEP: </label> <input type="text" id="cep"required /> </td> </div>
+              <div><td colspan="2">  <label for="velocidadeatendimento"> Velocidade de Atendimento: </label> <input type="range" id="velocidadeatendimento" required/> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="estado">Estado:</label> 
+                <select name="cartao" id="cartao">
+                    <option value="-">Estado </option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="bh">Bahia</option>
+                    <option value="outros">Outros</option>
+                 </select> </td> </div>
+
+
+              <div><td colspan="2" rowspan="2">  <label for="observacao">Observações:</label> <input type="text" id="observacao"required /> </td> </div>
+            
+        </tr>
+
+        <tr> 
+             <div><td colspan="2">  <label for="cidade"> Cidade: </label> <input type="text" id="cidade" required/> </td> </div>
+            
+        </tr>
+
+        <tr>
+            <td colspan="4">
+        <div class="buttom">
+            <button type="submit"> Enviar Mensagem </button>
+        </div></td>
+
+        </tr>
+
+    </fieldset>
+    </Table>
+    </form>
+
+
+
+
+
+
+    
+</body>
+</html>
