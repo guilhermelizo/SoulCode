@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+
+/** DESAFIO 1 **/
+.container{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 213px repeat(4, 2fr); /** O primeiro valor é a qtd de colunas e o segundo o tamanho das proximas colunas) **/
+}
+
+.div1{
+    border: 1px solid black;
+    background-color: chartreuse;
+}
+
+.div2{
+    border: 1px solid black;
+    background-color: rgb(182, 81, 207);
+}
+
+.div3{
+    border: 1px solid black;
+    background-color: rgb(68, 98, 195);
+}
+
+.div4{
+    border: 1px solid black;
+    background-color: rgb(220, 231, 59);
+}
+
+
+/** DESAFIO 2 **/
+
+.container2{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 213px repeat(1, 10fr);  
+}
+
+.diva{
+    border: 1px solid black;
+    background-color: chartreuse;
+}
+
+.divb{
+    border: 1px solid black;
+    background-color: rgb(182, 81, 207);
+}

@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background:url(../atividadeflexclassroom/imagens/bardosilar.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.envelope{
+    border: 1px solid black;
+    width: 500px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+.topo{
+    background-color: gray;
+    background:url(../atividadeflexclassroom/imagens/logotopo.jpg);
+    background-size: 100%;
+    height: 100px; 
+    
+}
+
+.menu{
+    background-color: rgb(55, 55, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu a{
+    color: rgb(235, 184, 109);
+    text-decoration: none;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+/**CONTAINER DAS FOTOS E SEUS FILHOS **/
+.fotoscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textofotos{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos{
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.foto1{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/lanche.jpg);
+}
+
+.foto2{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/jaguerito.jpg);
+}
+
+.foto3{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/cerveja.jpg);
+}
+
+.foto4{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/cervejas.jpg);
+}
+
+.foto5{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/lanche.jpg);
+}
+
+.foto6{
+    border: 1px black solid;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-image: url(../atividadeflexclassroom/imagens/lanche2.jpg);
+}
+
+/** FINAL DAS FOTOS **/
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotovalores{
+    border: 1px black solid;
+    display: flex;
+    justify-content: left;
+    background-size: 100%;
+    width: 300px;
+    height: 255px;
+    background-image: url(../atividadeflexclassroom/imagens/virtudes.jpg);
+    margin: 20px;
+
+}
+
+.textovalores{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 5px;
+    
+}
+
+.containerfinal{
+    background-color: rgb(135, 207, 135);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.fotofinal{
+    border: 1px black solid;
+    display: flex;
+    justify-content: right;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    /* background-image: url(../atividadeflexclassroom/imagens/lanche3.jpg); */
+    margin: 10px;
+    
+}
+
+.textofinal{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.rodape{
+    border: 1px solid black;
+}
+

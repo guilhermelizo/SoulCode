@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+       // Faça um script que leia três números inteiros, 
+       // e em seguida mostre o maior e o menor deles
+
+       let num1 = parseInt(prompt("Digite um numero1: ") );
+       let num2 = parseInt(prompt("Digite um numero2: ") );
+       let num3 = parseInt(prompt("Digite um numero3: ") );
+
+       document.write("Numero 1: " + num1 + " <br> ");
+       document.write("Numero 2: " + num2 + " <br> ");
+       document.write("Numero 3: " + num3 + " <br> ");
+
+       if(num1>num2 && num1>num3){
+        maior = num1 ;
+       }
+
+       else if(num2>num3){
+        maior = num2 ;
+       }
+       
+       else{
+        maior = num3;
+       }
+       document.write("O maior numero é: " + maior + " <br> ");
+       /////////////////////////////////
+            if(num1<num2 && num1<num3){
+                menor = num1;
+            }
+
+            else if(num2<num3){
+                menor = num2;
+            }
+
+            else{
+                menor = num3;
+            }
+
+            document.write("O menor numero é: " + menor+ " <br> ");
+
+    </script>
+    
+</body>
+</html>

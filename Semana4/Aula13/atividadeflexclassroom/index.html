@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Layout flexbox</title>
+</head>
+<body>
+        <div class="envelope"> <!-- DIV QUE ENVELOPA TUDO -->
+
+            <div class="topo"></div> <!-- DIV DO TOPO -->
+
+            <div class="menu"> <!-- DIV Onde se encontra os menus -->
+                <div class="menu1"> 
+                    <a href="#fotosdolocal"> Fotos do Local </a>
+
+                    </div>
+                <div class="menu2"> 
+                    <a href="#valores">Nossos Valores/Principios </a>
+                </div>
+                <div class="menu3"> 
+                    <a href="#comochegar"> Como chegar </a> 
+                </div>
+            </div>
+
+            <div class="cabecalho"> <!-- Div cabeçalho com texto -->
+                <h1> Bar do Silar </h1>
+                <p>  O cantinho preferido da sua casa! </p>
+            </div>
+
+            <div class="fotoscontainer"> <!-- DIV DAS FOTOS E TEXTO -->
+                <div class="textofotos"> <!-- Area com o texto das fotos -->
+                    <h1 id="fotosdolocal"> Conheça nosso espaço: </h1>
+                    <p> Chega mais, sinta-se em casa! </p>
+                </div> <!-- FInal texto -->
+
+                <div class="fotos"> <!-- conjunto das fotos -->
+                    <div class="foto1">  </div>
+                    <div class="foto2">  </div>
+                    <div class="foto3">  </div>
+                    <div class="foto4">  </div>
+                    <div class="foto5">  </div>
+                    <div class="foto6">  </div>
+
+                </div> <!-- Final do conjunto de fotos-->
+
+                <div class="valores"> <!-- Container amarelo do exemplo atividade-->
+                    <div class="fotovalores"> FOTO </div>
+
+                    <div class="textovalores">
+                        <h1 id="valores"> Nossos Valores </h1>
+                        <p>   O que acreditamos, e em prol do que trabalhamos. </p>
+                    </div>
+                </div> <!-- Final do container amarelo -->
+
+                <div class="containerfinal"> <!-- Ultimo container antes do rodapé -->
+                    <div class="textofinal">
+                        <h1 id="comochegar"> Onde nos localizamos: </h1> <br>
+                        <p>  Rua Lírio n.315 <br>
+                            Jardim das flores - Osasco <br>
+                            10min da estação Comandante Sampaio! </p>
+                    </div> <!-- Final do container textos -->
+
+                    <div class="fotofinal"><div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="200" height="200" 
+                            id="gmap_canvas" 
+                            src="https://maps.google.com/maps?q=Rua%20lirio,%20jardim%20das%20flores%20osasco&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            frameborder="0" scrolling="no" marginheight="0" 
+                            marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">
+                            </a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:200px;}
+                            </style><a href="https://www.embedgooglemap.net">google maps embed iframe</a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:200px;}
+                            </style>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Final do ultimo container-->
+
+                <div class="rodape"> <!-- Rodape com as informações -->
+                    <h3> Página desenvolvida por: Guilherme Lizo </h1>
+                </div>
+            </div> <!-- FINAL DO CONTAINER DAS FOTOS E TEXTO -->
+
+        </div> <!-- FINAL DO ENVELOPE -->
+
+</body>
+</html>

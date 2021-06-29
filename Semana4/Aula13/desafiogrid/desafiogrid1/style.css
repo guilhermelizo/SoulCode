@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 1px solid black;
+    width: 800px;
+    text-align: center;
+
+}
+.envelope{
+    width: 300;
+    display: grid;
+    grid-template-columns: repeat(12, 80px);
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+/*********/
+/*LINHA 1*/
+ .linha1{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin: 5px;
+}
+/*********/
+/*LINHA 2*/
+.linha2box2{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 5px;
+}
+
+.linha2box3{
+    background-color: yellow;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    margin: 5px;
+}
+/*********/
+/*LINHA 3*/
+.linha3box4{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 5px;
+}
+
+.linha3box5{
+    background-color: yellow;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    margin: 5px;
+}
+
+.linha3box6{
+    background-color: yellow;
+    grid-column-start:9;
+    grid-column-end: 13;
+    margin: 5px;
+}
+/*********/
+/*Linha 4*/
+.linha4box7{
+    background-color: yellow;
+    grid-column-start:1;
+    grid-column-end: 4;
+    margin: 5px;
+}
+
+.linha4box8{
+    background-color: yellow;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin: 5px;
+}
+
+.linha4box9{
+    background-color: yellow;
+    grid-column-start:7;
+    grid-column-end:10;
+    margin: 5px;
+}
+
+.linha4box10{
+    background-color: yellow;
+    grid-column-start: 10;
+    grid-column-end: 13;
+    margin: 5px;
+}
+/*********/
+/*Linha 5*/
+.linha5box11{
+    background-color: yellow;
+    grid-column-start:1;
+    grid-column-end: 3;
+    margin: 5px;
+}
+
+.linha5box12{
+    background-color: yellow;
+    grid-column-start:3;
+    grid-column-end: 5;
+    margin: 5px;
+}
+
+.linha5box13{
+    background-color: yellow;
+    grid-column-start:5;
+    grid-column-end: 7;
+    margin: 5px;
+}
+
+.linha5box14{
+    background-color: yellow;
+    grid-column-start:7;
+    grid-column-end: 9;
+    margin: 5px;
+}
+
+.linha5box15{
+    background-color: yellow;
+    grid-column-start:9;
+    grid-column-end: 11;
+    margin: 5px;
+}
+
+.linha5box16{
+    background-color: yellow;
+    grid-column-start:11;
+    grid-column-end: 13;
+    margin: 5px;
+}
+
+/*********/
+/*Linha 6*/
+.linha6{
+    background-color: yellow;
+    margin: 5px;
+}
+
+
+
+
+

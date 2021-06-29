@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos
+
+    </title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <script type="text/javascript">
+    /*
+    +   -    *   /
+    % resto da divisão, módulo
+    */ 
+
+
+    /* Incremento ( ++ )
+        a++
+        ++a
+
+    Decremento ( -- )
+        a--
+        --a
+    */
+
+        a = 30;
+        
+        document.write(a, "<br>");   // 30
+        document.write(++a, "<br>"); // 31
+        document.write(--a, "<br>"); // 30
+        document.write(a--, "<br>"); // 30
+        document.write(a++, "<br>"); // 29
+
+        b = 12;
+
+        document.write(b++, "<br>"); // 12
+        document.write(++b, "<br>"); // 14
+        document.write(--b, "<br>"); // 13
+        document.write(b--, "<br>"); // 13
+        document.write(--b, "<br>"); // 11
+
+    </script>
+ <hr>
+    <script type="text/javascript">
+        /*
+        =       ---> Atribuição de valor
+        ==      ---> Igualdade ex a == "soulcode"
+        ===     ---> Igualdade e do mesmo tipo
+
+        !       ---> Negação
+        !=      ---> Não é igual
+
+        >       ---> Maior que
+        <       ---> Menor que
+        >=      ---> Maior ou igual
+        <=      ---> Menor ou igual
+
+        */
+
+        A = 10;
+        B = "10";
+        C = 10;
+
+           
+        
+    </script>
+    <hr>
+
+    <script>
+    // b = 12;
+    // c = 10;
+    // // (condicao) ? (comando se verdadeiro) : (comando se falso)
+    // c1 = (a == c) ? "V":"F";
+    // c2 = (a > b) ? "Verdadeiro":"Falso";
+    // document.write(c1);
+    // document.write(c2);
+    // document.write((b != c) ? "Yes":"No");
+
+    </script>
+        <hr>
+        <script type="text/javascript">
+        /* Atividade - 
+        leia 3 notas, calcule a media
+        e mostre imprima a media e diga se está
+        aprovado ou reprovado
+        */
+
+        var nota1 = 9;
+        var nota2 = 6;
+        var nota3 = 7;
+        var media = (nota1 + nota2 + nota3 )/3
+
+        document.write("Nota1 :" + nota1 + "<br>");
+        document.write("Nota2 :" + nota2 + "<br>");
+        document.write("Nota3 :" + nota3 + "<br>");
+        document.write("Média : " + media.toFixed(2) + "<br>");
+        document.write((media >= 6) ? "Aprovado" : "Reprovado")
+
+    
+        </script>
+</body>
+</html>

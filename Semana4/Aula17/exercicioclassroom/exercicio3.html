@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+        <script type="text/javascript">
+            //Crie uma função que recebe o ano de nascimento
+            // da pessoa informando se ela é maior de idade(18 anos acima) 
+            //ou menor (considere 2021).
+
+            function idade(anonascimento){
+                idade = (2022 - anonascimento)
+                if(idade<18){
+                    document.write(idade + " Menor de idade!")
+                }
+                else{
+                    document.write(idade + " Maior de idade")
+                }
+             }
+             anonascimento =parseInt(prompt("Digite seu ano de nascimento"));
+             idade(anonascimento);
+                
+        </script>
+
+    
+</body>
+</html>

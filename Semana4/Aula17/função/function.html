@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    //estrutura da função
+        // function minhafuncao(){
+        //     alert("Minha primeira função");
+        //     document.write("Muita emoção");
+        // }
+        // //chamada da função
+        // minhafuncao()   // Depois de pronta, você pode chamar a função quantas vezes quiser que ela irá 
+        // minhafuncao()   // executar aquela função. 
+        // minhafuncao()   //É uma forma de deixar uma sequencia de códigos 'pre pronto'
+
+
+            //EXERCICIO - crie uma função que leia 2 valores e some e mostre
+        //     function funcaoexercicio(){
+        //     valor1 = parseInt(prompt("Digite 1 valor"));
+        //     valor2 = parseInt(prompt("Digite 1 valor"));
+        //     resultado = (valor1 + valor2);
+        //     document.write("O resultado é: " + resultado)
+
+        // }
+        // funcaoexercicio()   
+
+        // Exercicio 2 - 
+        // Crie uma função que leia um valor e diga se ele é par ou impar
+
+        // function par(){
+        //   var n = parseInt(prompt("Digite um n"));
+        //   if(n % 2 == 0)
+        //     alert("PAR");
+        //   else 
+        //     alert("IMPAR");
+        // }
+        // par();
+
+
+            // Exercicio 3
+         //Crie uma função que leia uma idade e mostre o ano que a 
+        // pessoa nasceu. 
+        //Obrigue o usuário a ler uma idade entre 0 e 140.
+
+        function idade(){
+            do{
+                number = Number (prompt("Digite uma idade: "));
+            }while(number < 0 || number > 140)
+
+            document.write(`Seu ano de nascimento é: ${(new Date().getFullYear()) - number}`)
+        }
+        idade();
+
+
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-----------------EXERCICIO 1-------------------------------------->
+        <h3> Exercicio 1 - Escreva um algoritmo que calcule e imprima a tabuada do 8 (1 a 10). </h3>
+        <script type="text/javascript">
+        //Escreva um algoritmo que calcule e imprima a tabuada do 8 (1 a 10).
+        prompt("Exercicio 1 - Taboada do 8!");
+        let contador1 = 1;
+        while(contador1 < 11){
+            document.write("8x" + contador1+" = " + (contador1*8) + " <br> ");
+            contador1++
+        }
+        </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 2-------------------------------------->
+        <h3> Exercicio 2- Ler um valor inteiro (aceitar somente valores entre 1 e 10) e escrever a tabuada de 1 a 10 do valor lido.</h3>
+        <script type="text/javascript">
+        //Ler um valor inteiro (aceitar somente valores entre 1 e 10) 
+        //e escrever a tabuada de 1 a 10 do valor lido.
+        prompt("Exercicio 2 - Taboada!");
+        let contador2 = 1;
+        let notavalida = 0;
+        do{
+            notavalida = parseInt(prompt(" Digite um numero inteiro de 1 a 10! "));
+          }while(notavalida < 0 || notavalida > 10);
+
+        while(contador2 < 11){
+            document.write(notavalida + "*" + contador2+" = " + (contador2*notavalida) + " <br> ");
+            contador2++
+        }  
+        </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 3-------------------------------------->
+        <h3> Exercicio 3 - Ler 10 valores, calcular e escrever a média aritmética desses valores lidos.</h3>
+        <script type="text/javascript">
+        //Ler 10 valores, calcular e escrever a média aritmética desses valores lidos.
+            prompt("Digite 10 valores e calcularemos a média entre eles");
+            let cont = 0;
+            let valores = 0;
+            
+            while(cont < 10){
+            cont++
+            valores = valores + parseFloat(prompt("Insira um valor"));
+            document.write("Valor "+cont + ": " + valores + " <br> ");
+              }
+              document.write("A média entre os valores é: " + (valores/10));
+              
+
+        </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 4-------------------------------------->
+        <h3> Exercicio 4 - Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.</h3>
+        <script type="text/javascript">
+            //Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.
+                prompt("Digite 10 valores e calcularemos a média entre eles");
+                let cont2 = 0;
+                let valores2 = 0;
+                let negativos = 0;
+                
+                while(cont2 < 10){
+                    valores2 = parseFloat(prompt("Insira um valor"));
+                    if(valores2<0){
+                        negativos++;
+                    } 
+                    cont2++;
+                   }
+                   document.write("Você digitou " + negativos + " numeros negativos!");
+     
+            </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 5-------------------------------------->
+        <h3> Exercicio 5 - Obrigue o usuário a escrever o nome “Romero” ou “Javiscleivson”.</h3>
+        <script type="text/javascript">
+        //Obrigue o usuário a escrever o nome “Romero” ou “Javiscleivson”.
+       // (nome != "Romero" && nome !="Javiscleivson");
+            do{
+                nome = prompt("Digite “Romero” ou “Javiscleivson”!");
+                }while(!(nome == "Romero" || nome == "javiscleivson" ))
+                
+
+                document.write("Parabéns, digitou corretamente!");
+ 
+        </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 6-------------------------------------->
+        <h3> Exercicio 6 - Obrigue o usuário a digitar um peso entre 30 e 250</h3>
+        <script type="text/javascript">
+            //Obrigue o usuário a digitar um peso entre 30 e 250,
+             //se peso for maior que 200 imprima “eita” senão ok..
+                
+            do{
+                 peso = prompt("Digite um peso de 30 a 250");
+                 }while(peso < 29 || peso > 250);
+
+                if(peso > 200){
+                    document.write("Eita!");
+                }
+                 
+
+                 document.write("O peso digitado foi: " + peso);
+     
+        </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr> 
+        <!-----------------EXERCICIO 7 e 8----------TERMINAR EMMMM---------------->
+        <h3> Exercicio 7-8 - Digite 3 notas e lhe daremos a média</h3>
+    <script type="text/javascript">
+        //Faça um algoritmo que leia três notas de um aluno, 
+        //calcule e escreva a média final deste aluno.
+        //Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o
+        //cálculo da média final é. Obrigue o usuário a ler uma nota válida entre 0 e 10.
+            
+        do{
+            prova1 = parseFloat(prompt(" Digite uma nota válida para a prova 1! "));
+          }while(prova1 < 0 || prova1 > 10);{
+              mediafinal = (prova1*2);
+          }
+
+        do{
+            prova2 = parseFloat(prompt(" Digite uma nota válida para a prova 2! "));
+          }while(prova2 < 0 || prova2 > 10);{
+              mediafinal = mediafinal + (prova2*3);
+          }  
+
+        do{
+            prova3 = parseFloat(prompt(" Digite uma nota válida para a prova3! "));
+          }while(prova3 < 0 || prova3 > 10);{
+              mediafinal = mediafinal + (prova3*5);
+          }
+
+
+        document.write("A média foi de: " + (mediafinal/10));
+
+    </script>
+        <!------------------------------------------------------------------>
+        <hr> <hr>
+        <!-----------------EXERCICIO 9-------------------------------------->
+        <h3> Exercicio 9 - Leia uma idade e mostre o ano que a pessoa nasceu. Obrigue o usuário a ler um valor
+            entre 0 e 140.</h3>
+        <script type="text/javascript">
+            //Leia uma idade e mostre o ano que a pessoa nasceu. 
+            //Obrigue o usuário a ler um valor entre 0 e 140.
+    
+        do {
+            idade = prompt("Qual a sua idade? (entre 0 e 140 para ser válido");
+           }
+            while (idade < 0 || idade > 140) {
+            ano = prompt("Em que ano estamos?");
+            anonascimento = ano - idade;
+            }
+        
+           
+            document.write("Você nasceu em: " + anonascimento + "!");
+    
+        </script>
+
+
+        
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       // Desenvolver um algoritmo que efetue a soma de todos os números ímpares que 
+       // são múltiplos de três e que se encontram no conjunto dos números de 1 até 500.
+
+              let soma = 0
+
+             for (let i = 1; i <= 500; i++) {
+                if (i % 2 != 0) {
+                   if (i % 3 == 0)
+                      soma = soma + i
+                }
+             }
+         
+             document.write(soma);
+             
+    </script>
+    
+</body>
+</html>

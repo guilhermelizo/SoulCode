@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+        <script type="text/javascript">
+        //Usando o Switch, leia um preço e um valor de desconto (%). Crie casos para os
+        //descontos (10,20,30) e calcule em cada situação. Caso nenhuma condição seja
+        //satisfeita diga, Não temos essa opção.
+        //5. Crie uma função que receba um número de maçãs compradas,
+            
+        var produto = parseFloat(prompt("Digite o valor do produto"))
+        var desconto = prompt("insira o desconto escolhido (10, 20 ou 30");
+        switch(desconto){
+            case '10': 
+                 document.write(" Com 10% ");
+                 document.write(`O valor do produto é: ${produto} <br>
+                 O valor do desconto é ${produto*0.10} <br>
+                 Então o novo preço é ${produto-(produto*0.1)}`) 
+                 break;
+            case '20': 
+                 document.write(" Com 20% ");
+                 document.write(`O valor do produto é: ${produto} <br>
+                 O valor do desconto é ${produto*0.20} <br>
+                 Então o novo preço é ${produto-(produto*0.2)}`) 
+                break;
+            case '30': 
+                 document.write(" Com 30% ");
+                 document.write(`O valor do produto é: ${produto} <br>
+                 O valor do desconto é ${produto*0.30} <br>
+                 Então o novo preço é ${produto-(produto*0.3)}`) 
+                break;
+
+            default:
+            document.write(" Não é um desconto válido ");
+        }
+
+        </script>
+
+    
+</body>
+</html>

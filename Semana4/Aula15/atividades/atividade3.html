@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script type="text/javascript">
+        // ATIVIDADE 3
+        // faça um scripr onde o usuário ira informar 3 notas  e calcular a 
+        // media. se a media for >7 o aluno está aprovado
+
+        var nota1 = parseInt(prompt("Digite a nota 1: "));
+        var nota2 = parseInt(prompt("Digite a nota 2: "));
+        var nota3 = parseInt(prompt("Digite a nota 3: "));
+        var media = parseInt(nota1+nota2+nota3)/3;
+
+        document.write("Sua média foi: " + media.toFixed(2) + "<br>")
+            if(media>=7){
+                document.write("Você foi aprovado! ");
+            }
+            else{
+                document.write("Você foi reprovado! ");
+            }
+        
+        </script>
+
+</body>
+</html>

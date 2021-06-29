@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .box-principal {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    background: rgb(146, 176, 223);
+ }
+ 
+ .elemento-interno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 20vh;
+    background: rgb(238, 140, 140);
+    margin: 1rem;
+ }
+ 
+ @media (max-width: 750px) {
+    .box-principal {
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+ 
+    .elemento-interno {
+       width: 90%;
+    }
+ }

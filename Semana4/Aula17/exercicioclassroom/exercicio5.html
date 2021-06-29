@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+        <script type="text/javascript">
+        // Crie uma função que receba um número de maçãs compradas, calcule e RETORNE o
+        // custo total da compra. As maçãs custam R$ 1,30 cada se forem compradas menos de
+        // uma dúzia, e R$ 1,00 se forem compradas pelo menos 12.
+
+        var qtd = parseInt(prompt("Digite quantas Maças foram compradas"))
+        function macas(quantidade){
+                if(quantidade<12){
+                    valortotal = parseFloat((quantidade*1.30));
+                }
+                else{
+                    valortotal = parseFloat((quantidade*1));
+                }
+                return valortotal;
+             }
+
+             var resultado = macas(qtd);
+             document.write(resultado);
+
+
+        </script>
+
+    
+</body>
+</html>

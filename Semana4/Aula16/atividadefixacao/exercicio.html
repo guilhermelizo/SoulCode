@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Fixação </title>
+</head>
+<body>
+            <h3>Exercício. 1 </h3>
+        <script type="text/javascript">
+             //1) Crie um algoritmo que tenha dados sobre um carro com dados marca,
+             // modelo e ano. Mostre esses dados na tela.
+
+                prompt("Vamos começar a questão 1! ");
+                let marcacarro = prompt("Digite a marca do carro: ");
+                let modelocarro = prompt("Digite o modelo do carro: ");
+                let anocarro = prompt("Digite o ano do carro: ");
+
+
+
+                document.write("Marca do carro: " + marcacarro + " <br> ");
+                document.write("Modelo do carro: " + modelocarro + " <br> ");
+                document.write("Ano do carro: " + anocarro + " <br> ");
+        </script> <hr> <hr> 
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 2 </h3>
+        <script type="text/javascript">
+             //2) Escreva um algoritmo para ler um valor (do teclado) 
+             //e escrever (na tela) o seu antecessor.
+
+                 prompt("Vamos começar a questão 2!");
+                let valorteclado = prompt("Digite um número: ");
+
+
+
+                document.write("O antecessor do numero digitado é: " + (valorteclado-1) + " <br> ");
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 3 </h3>
+        <script type="text/javascript">
+             //3) Escreva um algoritmo para ler o salário mensal atual de um 
+             //funcionário e o percentual de reajuste. 
+             //Calcular e escrever o valor do novo salário.
+
+                prompt("Vamos começar a questão 3!");
+                let valorsalario = parseFloat(prompt("Digite o seu salário: ") );
+                let valorreajuste =  parseFloat(prompt("Digite em quantos % deseja realizar o reajuste: "));
+
+                document.write("O valor do Salário antigo: " + valorsalario + " <br >");
+                document.write("O valor do novo salário com seu reajuste é: " + (valorsalario*valorreajuste));
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 4 </h3>
+        <script type="text/javascript">
+             //Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, 
+             //calcular e escrever o
+             //valor correspondente em graus Celsius (baseado na fórmula abaixo):
+
+                prompt("Vamos começar a questão 4!");
+                let fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit: ") );
+                let celsius = parseFloat((fahrenheit-32)*(5/9)).toFixed(2);
+
+                document.write("O valor da temperatura em Fahrenheit: " + (fahrenheit) + " <br> ");
+                document.write("O valor da temperatura em Celcius: " + (celsius));
+                
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 5 </h3>
+        <script type="text/javascript">
+             //Ler um valor e escrever a mensagem É MAIOR QUE 10! 
+             // se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10!
+
+                prompt("Vamos começar a questão 5!");
+                let valor10 = parseFloat(prompt("Digite um numero e diremos se é maior que 10: ") );
+
+                if(valor10>10){
+                    document.write(valor10 + " É MAIOR que 10!");
+                }
+                else if(valor10<10){
+                    document.write(valor10 + " É MENOR do que 10!");
+                }
+                else{
+                    document.write(" O valor é 10!");
+                }
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 6 </h3>
+        <script type="text/javascript">
+             //Ler um valor e escrever se é positivo ou negativo 
+             //(considere o valor zero como positivo).
+
+                prompt("Vamos começar a questão 6!");
+                let positivonegativo = parseFloat(prompt("Digite um valor e lhe informaremos se é positivo ou negativo! ") );
+
+                if(positivonegativo%2==0 ){
+                    document.write("Seu numero é par!");
+                }
+                
+                else{
+                    document.write("Seu numero é impar! ");
+                }
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 7 </h3>
+        <script type="text/javascript">
+             //Ler dois valores (considere que não serão lidos valores iguais) 
+             //e escrevê-los em ordem crescente.
+
+                prompt("Vamos começar a questão 7!");
+                let valor1 = parseInt(prompt("Digite 1 valor: ") );
+                let valor2 = parseInt(prompt("Digite outro valor, diferente do primeiro"));
+
+                if(valor1 > valor2){
+                    document.write("O maior numero é: " + valor1 + " <br> " + "E o menor: " + valor2);
+                }
+                
+                else{
+                    document.write("O maior numero é: " + valor2 + " <br> " + "E o menor: " + valor1);
+
+                }
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 8 </h3>
+        <script type="text/javascript">
+             //Ler dois valores e imprimir uma das três mensagens a seguir:
+             //‘Números iguais’, caso os números sejam iguais
+             //‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+             //‘Segundo maior’, caso o segundo seja maior que o primeiro.
+
+                prompt("Vamos começar a questão 8!");
+                let numero1 = parseInt(prompt("Digite 1 valor: ") );
+                let numero2 = parseInt(prompt("Digite outro valor: "));
+
+                if(numero1 > numero2){
+                    document.write("O primeiro numero digitado é o maior!");
+                }
+                
+                else if(numero2 > numero1){
+                    document.write("O Segundo numero digitado é o maior!");
+                }
+                else{
+                    document.write("Os 2 valores são iguais!");
+                }
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 9 </h3>
+        <script type="text/javascript">
+             //Escreva um algoritmo para imprimir os 10 primeiros 
+             //números inteiros maiores que 100.
+
+                prompt("Vamos começar a questão 9!");
+                for(cont = 101; cont <= 110; cont++)
+                 {
+                    document.write(cont + " <br> ");
+                 }
+
+        </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 10 </h3>
+         <script type="text/javascript">
+         //Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive).
+         //Considere que o N será sempre maior que ZERO.
+    
+            prompt("Vamos começar a questão 10");
+            
+            let valorn = parseInt(prompt("Digite um valor inteiro: "));
+            
+            for(countn = 1; countn <= valorn; countn++)
+            {
+                document.write(countn + " <br> ");
+            }
+         </script> <hr> <hr>
+
+        <!-------------------------------------------------------------------------->
+        <h3>Exercício. 11 </h3>
+         <script type="text/javascript">
+         //um script que efetue a Soma dos números de 1 a 10
+            
+            prompt("Vamos começar a questão 11!");
+
+            let somatoria = 0;
+
+                for(contador = 1; contador <= 10; contador++)
+                 {
+                    somatoria = (somatoria +contador) ;
+                 }
+                 document.write("A soma dos números de 1 a 10 é: " + somatoria + " <br> ");
+
+         </script> <hr> <hr>
+
+         <!-------------------------------------------------------------------------->
+        <h3>Desafio leide - 1 </h3>
+         <script type="text/javascript">
+         //Uma escola está precisando criar um sistema que exiba na tela a situação dos alunos com
+         //relação a aprovação. Crie um script com os seguintes criterios:
+         //1- os alunos tem 03 notas;
+         //2 - Você deverá fazer a média entre as três notas;
+         //3 - Se a media for maior ou igual a 7 exiba na tela "aprovado";
+         //4-  Se a media for menor que 7 exiba na tela "em recuperação";
+         //5 - Se media for menor que 4 "reprovado".
+         //6 - Atribua nome aos alunos e inclua junto a exibição da classificação.
+         //Obs.: Faça este processo para 03 alunos e enquadre cada um nas situações acima..
+            
+            prompt("O primeiro desafio!");
+
+            var nota1 = parseInt(prompt("Digite a nota 1: "));
+            var nota2 = parseInt(prompt("Digite a nota 2: "));
+            var nota3 = parseInt(prompt("Digite a nota 3: "));
+            var media = parseInt(nota1+nota2+nota3)/3;
+
+            document.write("Sua média foi: " + media.toFixed(2) + "<br>")
+            if(media>=7){
+                document.write("Você foi aprovado! ");
+                }
+            else if(media >= 4 && media < 7){
+                document.write("Você está de recuperação! ");
+                }
+            else{
+                document.write("Você foi reprovado! ");
+                }
+        
+
+         </script> <hr> <hr>
+
+
+<!-------------------------------------------------------------------------->
+<h3>Desafio leide - 2 </h3>
+         <script type="text/javascript">
+         //Peça ao usuário para digitar várias idades. 
+         //Exiba quantas pessoas são maior de idade (18 anos)e quantas são menores.
+            
+            prompt("O segundo desafio!");
+             n = parseInt(prompt("Digite a qtde de idades a serem lidas"));
+             maior = 0;
+             menor = 0;
+
+             for(c = 1; c <= n; c++){
+                 idade = parseInt(
+                   prompt("Digite a " + c + " idade: ")
+                 );
+                 if(idade >= 18)
+                   maior++;
+                 else
+                   menor++;
+             }
+
+             document.write("Temos " + maior + " maior(es) de idade<br>");
+             document.write("Temos " + menor + " menor(es) de idade");
+
+
+         </script> <hr> <hr>
+
+
+    <!-------------------------------------------------------------------------->
+        <h3>Desafio EXTRA </h3>
+         <script type="text/javascript">
+         //Faça um algoritmo que diga quantos numeros pares existem de 1 a 100
+
+            prompt("Vamos começar o desafio extra!");
+            let  par = 0;
+
+            for(let ii = 1; ii<=100; ii++){
+                if(ii % 2 === 0){
+                    par++
+                }
+            }
+
+            document.write("quantidade de pares: " + par)
+            
+        </script>
+</body>
+</html>
