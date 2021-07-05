@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script type="text/javascript">
+         //Crie um script onde o usuario digite 2 numeros e realize
+          //a divisão entre os dois sendo sempre dividido o maior pelo menor, 
+          //apos exiba na tela os numeros escolhidos e o resultado da divisão 
+          //arredondado para baixo(floor)
+
+          function divisao(n1, n2){
+            n1 = parseInt(prompt("Digite n1"));
+            n2 = parseInt(prompt("Digite n2"));
+
+            document.write(` O maior dividido pelo menor resulta em:  ${Math.max(n1,n2) / Math.min(n1,n2)} ` )
+         }
+        
+         divisao();
+
+    
+    </script>
+    
+</body>
+</html>

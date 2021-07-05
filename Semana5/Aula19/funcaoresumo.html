@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função resumo</title>
+</head>
+<body>
+        <script>
+            var a = 10; //global
+        //função sem parametro e sem retorno
+        function textoEstatico(){
+          var b = 20;
+          alert("Meu texto eh estatico");
+        } 
+
+        //função com parametro e sem retorno
+        function textoDinamico(nome, sobrenome){
+          alert(nome + sobrenome);
+        }
+
+        textoDinamico("Filipe ", "Santana");
+        textoDinamico("Renata ", "Pulz"); 
+        var n = prompt("Dgt nome");
+        var s = prompt("Dgt sobrenome");
+
+        textoDinamico(n, s);
+        
+        //função com parametro e com retorno
+        function media(a, b, c){
+          return (a + b + c)/3;
+        }
+
+        //armazenar em uma var
+        var a = media(7,7,7); //7
+        alert(a);
+
+        //imprimindo direto o retorno
+        alert(media(1,2,3));
+
+
+
+
+        //////////////////////
+        //FUNÇÃO ANONIMA
+        var a = function(a, b){
+          alert(a + b);
+        }
+
+        //Arrow function - função de seta
+        var a = (a, b) =>  {
+          r = a + b;
+          alert(r); 
+        }
+
+        a(1,2);
+        //estrutura    nomeDaFunção = (parametros) => { comandos }
+        var b = (texto) => alert(texto);
+
+        b("oi blz?");
+        
+        //converta essa função para arrow function
+        var media = (a,b) => {
+          r = (a+b)/2;
+          return (r);
+        }
+
+
+
+
+        </script>
+
+    
+</body>
+</html>

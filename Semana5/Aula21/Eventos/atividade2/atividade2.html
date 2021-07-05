@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- ATIVIDADE 1 
+    um botão em html que ao ser clicado acesse uma função que peça
+     para o usuário digitar um numeroN que seja maior que 0 e menor que 21.
+    Você deverá armazenar em um Array de números uma sequência de N 
+    (Que foi o número digitado pelo usuário) números pares, a partir do número 2. 
+        Exs: Usuário digitou 5
+        Deverá criar um Array contendo os números 2, 4, 6, 8 e 10.
+        Usuário digitou 3
+        Deverá criar um Array contendo os números 2 4 e 6.
+            -->
+
+     <h1>+ Interação!!</h1>
+     <p>Vamos conhecer os números pares?</p>
+     <button onclick="numerosPares()">Clique aqui!</button>
+     <p id="pares"></p>
+            
+     <script>
+         function numerosPares(){
+             var num = parseInt(prompt("Quantos números pares você quer ver?"));
+             var listaPares = [];
+             while(num < 0 || num > 21){
+                 num = parseInt(prompt("Digite um número maior que 0 e menor que 20:"));
+             };
+             for(var i = 0; i < num; i++){
+                 listaPares[i] = " " + (i*2+2);
+             };
+             document.getElementById("pares").innerHTML = ("Aqui está sua sequência de números pares com " + num + " números: " + listaPares + ".");
+         };
+     </script>
+            
+</body>
+
+
+
+</html>

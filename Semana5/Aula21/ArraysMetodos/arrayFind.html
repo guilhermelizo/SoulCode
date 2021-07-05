@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> .FIND </title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        //FIND ()
+        // Percorre pelo array ate encontrar a primeira ocorrencia desejada
+        // (Percorre da direita para a esquerda, seguindo o código)
+
+        var a = [12, 45, 76, 23, 45];
+
+        document.write( 
+            a.find(
+                (valor) => (valor > 40)
+                //Neste caso, retornará 45 pois é o primeiro valor encontrado ja
+                // acima do 40, valor posto na condição. Satisfazendo-a e encerrando a condição
+                //Lembre: O parenteses na função anonima representa o retorno, 
+                //neste caso, a verificação
+            )
+        )//Sem o document write ele não tem efeito visual
+
+        //Caso queira retornar a posição em que o elemento está no array, é o FindByIndex
+
+    </script>
+    
+</body>
+</html>

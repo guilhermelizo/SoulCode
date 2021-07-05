@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 3 </title>
+</head>
+<body>
+
+        <script type="text/javascript">
+            //Tendo como dados de entrada a altura e o sexo de uma pessoa, 
+            //construa uma arrow function que calcule seu peso ideal, utilizando 
+            //as seguintes fórmulas:
+            //Para homens: (72.7*h) - 58
+            //Para mulheres: (62.1*h) - 44.7 (h = altura)
+
+            let pesoreturn = 0;
+            const imc = (sexo,altura) => {
+                
+            if (sexo == "Homem")
+            {
+                pesoideal = parseFloat((72.7*altura) - 58);
+            }
+            else if (sexo == "Mulher"){
+                pesoideal = parseFloat((62.1*altura) - 44.7);
+            }
+            else{
+                document.write(pesoideal + " Não é um sexo válido")
+            }
+            return "Sendo " + sexo + " e tendo a altura de: " + altura + "<br>"
+             +  " Seu peso ideal é: " + pesoideal.toFixed(2);
+        }
+
+        sexo = prompt("Você é 'Homem' ou 'Mulher'?"); 
+        altura = parseFloat(prompt("Digite a Altura"));
+        document.write(imc(sexo,altura));
+        
+
+        
+        </script>
+    
+</body>
+</html>

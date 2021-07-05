@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2 </title>
+</head>
+<body>
+    <!-- Crie 3 campos de formulário com nome, email, senha-->
+
+    <form>
+    <p>caixaBaixa </p>  <!-- ONBLUR = Ativa quando desceleciona o cursor do local-->
+   Nome:  <input type="text" id="nome" onblur="caixaAlta(this)" placeholder="Digite o nome" required /> <br><br>
+
+   <p> caixaBaixa</p>
+   Email:   <input type="email" id="email" onblur="caixaBaixa(this)" placeholder="Digite o email" required />  <br><br>
+   
+   Senha:  <input type="password" id="senha" onblur="tamanhoSenha(this)" placeholder="Digite a senha" required />  <br><br>
+
+   <p id="tamanho"> </p>
+
+   <button type="button" onclick="entrar()"> Login </button>
+    <span id="logou"> </span>
+
+</form>
+
+    
+
+   <script>
+       
+       caixaAlta = (e) => {
+        caixa = document.getElementById(e.id);
+        caixa.value = caixa.value.toUpperCase();
+       }
+       caixaBaixa = (e) => {
+        caixa = document.getElementById(e.id);
+        caixa.value = caixa.value.toLowerCase();
+       }
+
+       tamanhoSenha = () =>{
+           senha = document.getElementById("senha").value;
+           if(senha.length < 6){
+               document.getElementById('tamanho').innerHTML = `
+               A senha deve ter no mínimo 6 caracteres`;
+           }else{
+               document.getElementById('tamanho').innerHTML = `
+               Senha ok`;
+           }
+       }
+
+       entrar = () =>{
+           nome = document.getElementById("nome").value;
+           email = document.getElementById("email").value;
+           senha = document.getElementById("senha").value;
+
+           loginnome = "GUILHERME"
+           loginemail= "123@123.com"
+           loginsenha= 123123123
+
+           if(nome == loginnome && email== loginemail && senha == loginsenha){
+               document.getElementById('tamanho').innerHTML = `
+               Parabéns, você se logou!`;
+           }else{
+               document.getElementById('tamanho').innerHTML = `
+               Dados incorretos, tente de novo`;
+           }
+       }
+
+
+       
+   </script>
+
+</body>
+</html>

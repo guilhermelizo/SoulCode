@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3 </title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Escreva um algoritmo que permita a leitura das notas de  5 alunos.
+        //Calcule a média desses alunos e mostre.
+
+        const result = () => {
+                const notas = new Array()
+                notas[0] = prompt("Digite uma nome: ")
+                notas[1] = Number(prompt("Digite uma nota: "))
+                notas[2] = Number(prompt("Digite uma nota: "))
+                notas[3] = Number(prompt("Digite uma nota: "))
+                media = (notas[1] + notas[2] + notas[3]) / 3
+                document.write(`Nome do Aluno é ${notas[0]} Sua média é: ${parseInt(media)} <br>`)
+            }
+            for(i = 1; i <= 5; i++){
+                result();
+            }
+
+
+
+
+    </script>
+    
+</body>
+</html>

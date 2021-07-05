@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> .push </title>
+</head>
+<body>
+    <script type="text/javascript">
+     // PUSH
+     // Insere um elemento na lista, no final dela 
+     //Aplicação>>>>>  nomeArray.push("ValorInserido")
+
+    arraycriado = [1,2,3,4,5]
+
+    arraycriado.push(0);
+    arraycriado.push(1);
+    arraycriado.push(8);
+    arraycriado.push(prompt("digite um valor"));
+
+    //push no laço for
+    for (cont = 1; cont <=3; cont ++){
+        r = prompt("dgt 1 valor");
+        arraycriado.push(r);
+    }
+
+    document.write(arraycriado, "<br>");
+
+    //Push com Function
+
+    function soma(a, b){
+          return a+b
+        }
+
+        arraycriado.push(soma(1,2));
+        arraycriado.push(soma(156,212));
+        arraycriado.push(soma(11,212));
+        arraycriado.push(soma(31,22));
+        arraycriado.push(soma(15,42));
+
+        document.write(arraycriado, "<br>");
+
+        //UNSHIFT *********************************************
+        // Insere no incício do array
+
+        arraycriado.unshift("To no inicio");
+        document.write(arraycriado, "<br>");
+
+
+        //POP - Apaga o ultimo elemento da lista
+        arraycriado.pop();
+        arraycriado.pop();
+        arraycriado.pop();
+        arraycriado.pop();
+        arraycriado.pop();
+        arraycriado.pop();
+        arraycriado.pop();
+
+        document.write(arraycriado, "<br>");
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

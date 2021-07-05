@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/projetojavascript2.appspot.com/o/Logo%20SoulCode.jfif?alt=media&token=f7d61cb5-1e4a-4dd6-8e2c-887433c12732" />
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Index </title>
+</head>
+<body>
+    <!--*********************************************************
+    ********************* HEADER ********************************
+    *************************************************************-->
+    <header>
+        <div class="divheader darkmodejs"> <div class="carta"> </div>  </div>
+    </header>
+
+    <!--*********************************************************
+    ********************* NAVEGAÇÃO *****************************
+    *************************************************************-->
+    <div class="navegacao">
+        <nav>
+            <ul class="buscaul">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="conversoes.html"> Conversoes </a></li>
+              <li><a href="calculadora.html"> Calculadora </a></li>
+              <li><button class="botaoaumenta" onclick="diminuir()"> A- </button>
+                  <button class="botaodiminui" onclick="aumentar()"> A+ </button>
+                </li> 
+            </ul>
+          </nav>
+    </div>
+
+    <!--*********************************************************
+    ********************* CORPO *********************************
+    *************************************************************-->
+    <div class="corpo" id="corpojs">    <!--- Div do topo -->
+        <div class="divcima darkmodejs">
+            <div class="txtcima">
+                <h1> CalcTudo </h1>
+                <h3> Bem vindo ao nosso site! </h3>
+            </div>    
+            <div class="divbutton">
+                <button class="darkbutton darkmodejs" type="button" onclick="darkmode()"> Dark Mode </button>
+            </div>
+        </div>
+            <!----------------------------------->
+        <div class="divmeio darkmodejs"> <!-- Div do meio -->
+            <div class="imgmeio">   </div>
+
+            <div class="txtmeio">
+                <h3> Conversões </h3>
+                <h5> Realize vários tipos de conversões em um só lugar! </h5>
+            </div>
+        </div>
+            <!----------------------------------->
+        <div class="divbaixo darkmodejs"> <!-- Div de baixo-->
+            <div class="imgbaixo">   </div>
+            
+            <div class="txtbaixo">
+                <h3> Calculadora </h3>
+                <h5> Realize vários tipos de cálculos em um só lugar! </h5>
+            </div>
+        </div>
+    
+
+    <!--*********************************************************
+    ********************* FOOTER ********************************
+    *************************************************************-->
+        <footer class="darkmodejs">
+            <div class="divfooter">
+                CalcTudo desenvolvida por Guilherme Lizo 
+                <a href="https://www.linkedin.com/in/guilhermelizo/"> ( Linkedin ) </a> 
+                <a href="https://github.com/guilhermelizo"> ( GitHub ) </a> <br>
+
+            </div>
+        </footer>
+
+
+        <!-- ****ACESSIBILIDADE**** --> 
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+               <div class="vw-plugin-top-wrapper"></div>
+            </div>
+         </div>
+      
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    </div> <!-- FECHAMENTO DIV ENVELOPE CORPO -->  
+<script src="acessibilidade.js"></script> 
+<script src="darkmodebutton.js"></script>
+</body>
+</html>

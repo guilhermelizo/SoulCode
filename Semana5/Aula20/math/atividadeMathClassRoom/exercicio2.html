@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+         //Crie um script onde o usuario digite 3 numeros , 
+         //esse numeros elevados a 2 , 3 e 4 , mostre o resultado de 
+         //cada um deles e a soma das potencias dos 3
+
+
+         function elevado(n1, n2, n3){
+            n1 =parseInt(prompt("Digite n1"));
+            n2 = parseInt(prompt("Digite n2"));
+            n3 = parseInt(prompt("Digite n3"));
+
+            document.write(` ${n1} elevado a 2: ${Math.pow(n1,2)} <br>
+                             ${n1} elevado a 3: ${Math.pow(n1,3)} <br>
+                             ${n1} elevado a 4: ${Math.pow(n1,4)} <br>
+                             ${n2} elevado a 2: ${Math.pow(n2,2)} <br>
+                             ${n2} elevado a 3: ${Math.pow(n2,3)} <br>
+                             ${n2} elevado a 4: ${Math.pow(n2,4)} <br>
+                             ${n3} elevado a 2: ${Math.pow(n3,2)} <br>
+                             ${n3} elevado a 3: ${Math.pow(n3,3)} <br>
+                             ${n3} elevado a 4: ${Math.pow(n3,4)} <br>
+                            ` )
+         }
+        
+         elevado();
+
+    
+    </script>
+    
+</body>
+</html>

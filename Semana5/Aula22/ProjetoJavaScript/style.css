@@ -1,0 +1,394 @@
+/* CONFIGURAÇÕES GERAIS*/
+*{  
+    padding: 0px;
+    margin: 0px;
+    font-family: cursive;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+}
+
+/************************/
+/***** TOPO e NAV ******/
+.divheader{
+    width: 100%;
+    height: 15%;
+    background-color: #E06666;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carta{
+    margin: 5px;
+    margin-right: 25px ;
+    width: 160px;
+    height: 124px;
+    border-radius: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/projetojavascript2.appspot.com/o/carta.png?alt=media&token=0e3a3b17-5809-489e-9e4d-a75e3cd8780a);
+}
+nav {
+    height: 5%;
+    border: 2px black solid;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  ul li{
+      margin: 5px 15px;
+  }
+  
+  .busca {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    width: 200px;
+  }
+  .buscaul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+  }
+/************************/
+/********* CORPO ********/
+.corpo{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*TOP*/
+.divcima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txtcima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.divbutton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.darkbutton{
+    margin: 5px;
+    padding: 5px 10px;
+    box-shadow: black 2px 2px 2px 2px;
+    text-shadow: black 0.5px 0.5px;
+    background-color: #FFFFFF;
+}
+
+/*MID*/
+.divmeio{
+    background-color: #D5A6BD;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+}
+
+.imgmeio{
+    margin: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: black 1px solid;
+    background-color: white;
+}
+
+.txtmeio{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+/*BOT*/
+.divbaixo{
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    background-color: #8E7CC3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgbaixo{
+    margin: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: black 1px solid;
+    background-color: white;
+    
+}
+
+.txtbaixo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/************************/
+/******** FOOTER ********/
+footer{
+    background-color: #EA9999;
+    width: auto;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.divfooter{
+    margin: 0.5rem;
+}
+
+/****************************************************/
+/****************************************************/
+/************** PAGINA CALCULADORA ******************/
+/****************************************************/
+/****************************************************/
+
+.envelopecalculadora{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-right: 30%;
+    flex-direction: column;
+}
+
+.botoes{
+    padding: 7px;
+}
+
+/** Linha 1 **/
+.linha1{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2em;
+    align-content: center;
+    justify-content: center;
+}
+
+.resultadocalculadora{
+    align-content: center;
+    justify-content: center;
+    margin: 10px 5px;
+}
+
+/** Linha 2 **/
+.linha2{
+    border: 3px black solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.botaosoma{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaosubtrai{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaomultiplica{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaodivide{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+/** Linha 3 **/
+.linha3{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.botaoporcentagem{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaoAquadrado{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaoBquadrado{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+.botaoAB{
+    border: 2px black solid;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+/** Linha 4 **/
+.linha4{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.botaoValorA{
+    border: 2px black solid;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+    
+}
+
+.botaoValorB{
+    border: 2px black solid;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+}
+
+/****************************************************/
+/****************************************************/
+/************** PAGINA CONVERSÕES *******************/
+/****************************************************/
+/****************************************************/
+.envelopeconversoes{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-right: 30%;
+    flex-direction: column;
+}
+
+.resultadoconversoes{
+    margin-left: 10px;
+}
+
+/** CONVERSAO MONETARIA **/
+.conversaomonetaria{
+    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha1conversao{
+    margin: 3px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.real{
+    margin-left: 3px;
+}
+
+.retornomonetario{
+    border: 3px black solid
+    
+}
+
+.opcoesmonetario{
+}
+
+.botaoConverterMonetario{
+    padding: 2px;
+    box-shadow: 2px 2px 2px 1px;
+}
+
+.linha2conversao{
+    display: flex;
+    flex-direction: column;
+}
+
+.resultadomonetario{
+    margin: 10px;
+    border: 2px black solid;
+}
+
+/** CONVERSAO TEMPERATURA **/
+.conversaotemperatura{
+    margin-top: 15px;
+    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha1temperatura{
+    margin: 3px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.celcius{
+    margin-left: 3px;
+}
+
+.retornotemperatura{
+    border: 3px black solid
+}
+
+.opcoestemperatura{
+}
+
+.botaoConverterTemperatura{
+    padding: 2px;
+    box-shadow: 2px 2px 2px 1px;
+}
+
+.linha2temperatura{
+    display: flex;
+    flex-direction: column;
+}
+
+.resultadotemperatura{
+    margin: 10px;
+    border: 2px black solid;
+}
+

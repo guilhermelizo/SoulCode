@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Integração com Formulario </title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite o nome" />
+    <input type="email" id="email" placeholder="Digite o email" />
+    
+    <button onclick="recebeDados()">Passa</button>
+    <p id="revela"></p>
+<script>
+    recebeDados = () => {
+        //recebe o valor digitado no campo nome
+        n = document.getElementById("nome").value;
+        e = document.getElementById("email").value;
+
+        document.getElementById('revela').innerHTML = `
+            Nome: ${n}, email: ${e}
+        `
+    }
+
+</script>
+        <hr> <hr>
+    <!-- //  ATIVIDADE 1
+        crie um formulário com os campos valorA e valorB. ao clicar em um botão,
+    //chame  uma função que some os valores dos campos. e exiba em um paragrafo -->
+            <input type="number" id="valorA" placeholder="Digite o Valor 1" />
+            <input type="number" id="valorB" placeholder="Digite o Valor 2" />
+
+
+            
+            <p id="resultado"> </p>
+            <button onclick="soma()"> Soma </button>
+            
+            <button onclick="subtrai()"> Subtrai </button>
+
+            <button onclick="multiplica()"> Multiplica </button>
+
+            <button onclick="divide()"> Divide </button>
+
+            <script>
+                soma = () =>{
+                    v1 = parseInt(document.getElementById("valorA").value);
+                    v2 = parseInt(document.getElementById("valorB").value);
+                    
+                    document.getElementById('resultado').innerHTML= `
+                    valorA: ${v1} + valorB: ${v2} resulta em: ${v1+v2}
+                    `
+                }
+
+                subtrai = () =>{
+                    v1 = parseInt(document.getElementById("valorA").value);
+                    v2 = parseInt(document.getElementById("valorB").value);
+                    
+                    document.getElementById('resultado').innerHTML= `
+                    valorA: ${v1} - valorB: ${v2} resulta em: ${v1-v2}
+                    `
+                }
+
+                multiplica = () =>{
+                    v1 = parseInt(document.getElementById("valorA").value);
+                    v2 = parseInt(document.getElementById("valorB").value);
+                    
+                    document.getElementById('resultado').innerHTML= `
+                    valorA: ${v1} * valorB: ${v2} resulta em: ${v1*v2}
+                    `
+                }
+
+                divide = () =>{
+                    v1 = parseInt(document.getElementById("valorA").value);
+                    v2 = parseInt(document.getElementById("valorB").value);
+                    
+                    document.getElementById('resultado').innerHTML= `
+                    valorA: ${v1} / valorB: ${v2} resulta em: ${v1/v2}
+                    `
+                }
+
+            </script>
+
+
+
+
+
+
+    
+</body>
+</html>

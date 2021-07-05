@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/projetojavascript2.appspot.com/o/Logo%20SoulCode.jfif?alt=media&token=f7d61cb5-1e4a-4dd6-8e2c-887433c12732" />
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversões </title>
+</head>
+<body>
+    <!--*********************************************************
+    ********************* HEADER ********************************
+    *************************************************************-->
+    <header>
+        <div class="divheader"> <div class="carta"> </div>  </div>
+    </header>
+
+    <!--*********************************************************
+    ********************* NAVEGAÇÃO *****************************
+    *************************************************************-->
+    <div class="navegacao">
+        <nav>
+            <ul class="buscaul">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="conversoes.html"> Conversoes </a></li>
+              <li><a href="calculadora.html"> Calculadora </a></li>
+              <li><button class="botaoaumenta" onclick="diminuir()"> A- </button>
+                <button class="botaodiminui" onclick="aumentar()"> A+ </button>
+              </li>
+            </ul>
+              
+          </nav>
+    </div>
+
+    <!--*********************************************************
+    ********************* CORPO *********************************
+    *************************************************************-->
+    <div class="corpo">    <!--- Div do topo -->
+        <div class="divcima">
+            <div class="txtcima">
+                <h1> CalcTudo </h1>
+                <h3> Conversões </h3>
+            </div>    
+            
+        </div>
+            <!----------------------------------->
+            <!----------------------------------->
+
+    <!--*********************************************************
+    ********************* BLOCO CONVERSÕES **********************
+    *************************************************************-->   
+    
+         <form class="envelopeconversoes">
+
+            <!-- CONVERSÃO MONETARIA -->
+             
+                <fieldset class="conversaomonetaria"><legend> REAL PARA: </legend>
+
+                 <div class="linha1conversao">
+                    <P class="real"> R$ </P> 
+                    <input type="text" id="valorreal" class="retornomonetario" placeholder="Digite o valor em Real">
+                    <select name="opcoes" class="opcoes" id="moedas">
+                        <option value="-">Opções </option>
+                        <option value="euro"> Euro </option>
+                        <option value="dolar"> Dolar </option>
+                     </select>
+                    <button type="button" class="botaoConverterMonetario" onclick="funcaomonetaria()"> Converter </button>
+                </div>
+
+                <div class="linha2conversao">
+                    <p class="resultadoconversoes"> Resultado: </p>
+                    <input type="text" id="resultadomonetario">  
+                </div>
+            </fieldset>
+
+             <!--///////////////////////////////////-->
+             <!-- CONVERSÃO TEMPERATURA -->
+             <fieldset class="conversaotemperatura"><legend> CELSIUS PARA: </legend>
+
+                <div class="linha1temperatura">
+                    <P class="celcius"> C° </P> 
+                   <input type="text" class="retornotemperatura" id="valortemperatura" placeholder="Digite o valor em Celcius">
+                   <select name="opcoes" class="opcoes" id="temperaturas">
+                       <option value="-">Opções </option>
+                       <option value="fahrenheit">Fahrenheit</option>
+                       <option value="kelvin">Kelvin</option>
+                    </select>
+                   <button type="button"  class="botaoConverterTemperatura" onclick="funcaotemperatura()"> Converter </button>
+               </div>
+
+               <div class="linha2temperatura">
+                   <p class="resultadoconversoes"> Resultado: </p>
+                   <input type="text" id="resultadotemperatura">   
+               </div>
+            </fieldset>
+         </form>
+    </div> <!-- Div final do corpo -->
+    <!--*********************************************************
+    ********************* FOOTER ********************************
+    *************************************************************-->
+        <footer class="darkmodejs">
+            <div class="divfooter">
+                CalcTudo desenvolvida por Guilherme Lizo 
+                <a href="https://www.linkedin.com/in/guilhermelizo/"> ( Linkedin ) </a> 
+                <a href="https://github.com/guilhermelizo"> ( GitHub ) </a> <br>
+
+            </div>
+        </footer>
+
+
+       <!-- ****ACESSIBILIDADE**** --> 
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+               <div class="vw-plugin-top-wrapper"></div>
+            </div>
+         </div>
+      
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>      
+
+<script src="acessibilidade.js"></script> 
+<script src="funcoesconversoes.js"></script>
+</body>
+</html>

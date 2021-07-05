@@ -1,0 +1,41 @@
+/*
+Agora crie as configurações de css para cada situação de acordo com o que se pede:
+classe semaforo 
+  largura 300px, altura 900px, display flexivel, alinhamento de itens centro, 
+  direção flexivel colunas, conteudo justificado centro, cor de fundo cinza,
+div (geral)
+  largura 250 px, altura 250px, margem 10px, cor de fundo #3E3E3E, 
+  borda arredondada 200px
+botão
+  cor de fundo black, preenchimento interno 30px, border 0px, cor do texto azure, 
+  borda arredondada, 40px margem 10px
+  */
+
+.semaforo{
+      width: 200px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: gray;
+  }
+
+.botao{
+      background-color: black;
+      padding: 30px;
+      border: 0px;
+      color: azure;
+      border-radius: 40px;
+      margin: 10px;
+  }
+
+div{
+      width: 180px;
+      height: 180px;
+      margin: 10px;
+      background-color: #3E3E3E;
+      border-radius: 200px;
+  }
+
+  

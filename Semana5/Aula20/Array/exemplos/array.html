@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script type="text/javascript">
+            //Array sem tamanho
+            meuArray = new Array();
+
+            //Array com tamanho - o 4 o fará poder armazenar 4 (de 0 a 3) posições
+            // a definir. A posição inicial sempre será a 0. Neste caso como definimos
+            //4 posições, será de (0 , 1 , 2 , 3).
+            meuArray2 = new Array(4);
+
+            //Array com valores definitos
+            meuArray3 = new Array("valor1","valor2","valor3");
+
+            //Apenas com [] - Seguindo o exemplo acima 
+            //(Apenas outra forma de declarar)
+            meuArray4 = ["Valor1","Valor3","Valor3"];
+
+            //Com posições definidas
+            //Definindo as posições: 
+            //nomeArray[nomePosição] = valorDesejado
+            meuArray5 = new Array();
+            meuArray5[5] = "Café";  // Coloco o valor "Café" na posição 5 do array
+            meuArray5[1] = "Pao" ;
+            meuArray5[4] = "Queijo" ;
+           // meuArray5[1] = "Presunto";
+             
+             //Outro exemplo com posições definidas:
+             meuArray6 = new Array();
+             meuArray6 ['Marca'] = "Fiat";
+             meuArray6 ['Modelo'] = "Uno";
+             meuArray6 ['Cor'] = "Vermelho";
+
+             //imprimir o valor de um array 
+             //nome[posição]
+             document.write(`${meuArray5[1]} de ${meuArray5[4]}`);
+
+             
+             //Tamanho do Array "Length" - array.length
+             a = [0,1,2,3,4,5];
+             b = [6,7,8,9]
+             document.write(`O Array 'a' tem o tamanho de ${a.lenght} posições<br>`)
+             document.write(`O Array 'b' tem o tamanho de ${b.lenght} posições<br>`)
+
+
+             //JOIN - Cria uma string unica com os valores do array
+             //separando eles com algum caractere
+
+             // nomeArray.join()
+             //document.write(a.join('/'))   >>> No caso, separara o meu array por uma barra '/'
+             document.write(a.join ("*")) // neste caso o * separará o aray
+
+
+             //CONCAT - Concatenar arrays >>> array1.concat(array2)
+              c = a.concat(b) // Concatenar Array A ao Array B salvando ambos num novo array, o C
+
+
+
+
+
+        </script>
+    
+</body>
+</html>
