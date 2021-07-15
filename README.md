@@ -12,3 +12,9 @@ Introdução aos estudos do CSS3.
 
 ## Semana 4
 Continuidade do módulo e projeto de finalização com os estudos do CSS3.
+
+## Semana 5
+Inicio Bootstrap.
+
+## Semana 6
+Continuidade do módulo e projeto de finalização com os estudos do Bootstrap.
