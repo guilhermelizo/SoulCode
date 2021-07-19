@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .container{
+            margin-top: 4rem;
+            border: 2px black solid;
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient( rgb(243, 234, 234),
+             antiquewhite, rgb(147, 131, 233), rgb(243, 234, 234), rgb(156, 194, 168 ));
+            box-shadow: black 2px 2px 2px 2px;
+
+        }
+
+    </style>
+
+    <script>
+
+$(document).ready(function () {
+            $("#senha").keyup(checkPasswordMatch);
+            $("#confirmeAsenha").keyup(checkPasswordMatch);
+        });
+
+        function checarSenha() {
+            var password = $("#senha").val();
+            var confirmPassword = $("#confirmeAsenha").val();
+
+            if (password != confirmPassword) {
+                $("#divcheck").html("<span style='color: red'>Senhas diferentes!</span>");
+                document.getElementById("enviarsenha").disabled = true;
+            } else {
+                $("#divcheck").html("<span style='color: green'>Senha ok!</span>");
+                document.getElementById("enviarsenha").disabled = false;
+            }
+        }
+
+
+        function validasenha() {
+             var x = document.getElementById("senha");
+             if (x.type === "password") {
+               x.type = "text";
+             } else {
+               x.type = "password";
+             }
+            }
+
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- ATIVIDADE!!!!
+         Fazer o seguinte formulário:
+         Nome:
+         Sobrenome:
+         email:
+         Senha:Confirme a senha:
+         aceitar os termos de uso?
+         Sim      Não       (inline)   
+        -->
+    
+    <div class="container">
+        <form>
+            <h1>Atividade Formulário com Bootstrap</h1> <hr>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">  <!-- Div nome-->
+                    <label for="nomeCampo"> Nome: </label>
+                    <input type="text" placeholder="Email" id="nomeCampo" class="form-control">
+                </div>
+                <div class="form-group col-md-6"><!-- Div  Sobrenome-->
+                    <label for="sobrenomeCampo"> Sobrenome: </label>
+                    <input type="text" placeholder="Email" id="sobrenomeCampo" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group"> <!-- Div Email -->
+                <label for="emailCampo"> Email: </label>
+                <input type="email" placeholder="Email" id="emailCampo" class="form-control">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="senha"> Senha </label>
+                    <input type="password" value="FakePSW" id="senha" class="form-control" onkeyup="checarSenha()" >
+                    <!-- An element to toggle between password visibility -->
+                    <input type="checkbox" onclick="validasenha()">Mostrar senha
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="senha2"> Confirme a Senha </label>
+                    <input type="password" value="FakePSW" id="senha2" class="form-control" onkeyup="checarSenha()" >
+                    <!-- An element to toggle between password visibility -->
+                    <input type="checkbox" onclick="validasenha()">Mostrar senha
+                </div>
+            </div>
+
+            <div class="form-group">  <!-- Div Checkbox -->  
+                <p> Você aceita os termos de uso? </p>
+    
+                <div class="form-check form-check-inline"> <!-- form-check (bootstrap de form-chek) --> 
+                    <input type="radio" value="net" class="form-check-input" name="termos"> 
+                    <label for="checkCampo"  class="form-check-label"> Sim (Aceitar) </label> 
+                </div>
+    
+                <div class="form-check form-check-inline">   
+                    <input type="radio" value="tv"  class="form-check-input" name="termos"> 
+                    <label for="checkCampo" class="form-check-label"> Não (Recusar)  </label>
+                </div>
+
+                <button type="submit" class="btn btn-dark"> Enviar </button>
+
+        </form>
+
+    </div>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

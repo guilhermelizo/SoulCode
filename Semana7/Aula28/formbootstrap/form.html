@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fomulario com bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .container{
+            border: 2px black solid;
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient( grey, antiquewhite, gray);
+            box-shadow: black 10px 10px 10px 10px;
+
+        }
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container"> 
+    <form action="">
+        <h1>Exemplo de formulario</h1> <hr>
+
+        <div class="form-group"> <!-- Div Email -->
+            <label for="emailCampo"> Email: </label>
+            <input type="email" placeholder="Email" id="emailCampo" class="form-control">
+        </div>
+
+        <div class="form-group"> <!-- Div Senha -->     
+            <label for="senhaCampo"> Senha: </label>
+            <input type="password" placeholder="Senha" id="senhaCampo" class="form-control">
+        </div>
+
+        <div class="form-group"> <!-- form group (bootstrap para configuração de divs em formulário, separando po grupos)-->
+            <label for="selectCampo"> Selecione </label>
+            <select class="form-control" id="selectCampo">
+                <option value="1"> oepa 1 </option>
+                <option value="2"> oepa 2 </option>
+                <option value="3"> oepa 3 </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="areaCampo"> Conteúdo </label>
+            <textarea id=areaCampo class="form-control"> </textarea>
+        </div>
+
+        <div class="form-group">  <!-- Div Checkbox -->  
+            <p> Onde nos conheceu?</p>
+
+            <div class="form-check"> <!-- form-check (bootstrap de form-chek) --> 
+                <input type="checkbox" value="net" class="form-check-input"> 
+                <label for="checkCampo"  class="form-check-label"> Internet </label> <!-- form-check-label(bootstrap para label)-->
+            </div>
+
+            <div  class="form-check">   
+                <input type="checkbox" value="tv"  class="form-check-input"> 
+                <label for="checkCampo" class="form-check-label"> TV </label>
+            </div>
+
+            <div  class="form-check">
+                <input type="checkbox" ivalue="jornal"  class="form-check-input"> 
+                <label for="checkCampo" class="form-check-label"> Jornal </label>
+            </div>
+        </div>    
+            <button type="submit" class="btn btn-primary"> Enviar </button>
+
+            <hr>
+
+            <div class="form-group">  <!-- Div Checkbox -->  
+                <p> Onde nos conheceu?</p>
+    
+                <div class="form-check form-check-inline"> <!-- form-check (bootstrap de form-chek) || form-check-inline (os deixa na mesma linha )-->
+                    <input type="checkbox" value="net" class="form-check-input"> 
+                    <label for="checkCampo"  class="form-check-label"> Internet </label> <!-- form-check-label(bootstrap para label)-->
+                </div>
+    
+                <div  class="form-check form-check-inline">   
+                    <input type="checkbox" value="tv"  class="form-check-input"> 
+                    <label for="checkCampo" class="form-check-label"> TV </label>
+                </div>
+    
+                <div  class="form-check form-check-inline">
+                    <input type="checkbox" ivalue="jornal"  class="form-check-input"> 
+                    <label for="checkCampo" class="form-check-label"> Jornal </label>
+                </div>
+            </div>
+            <hr> <hr> 
+ <!----------------------------------------------------------------------------------------------------------------->
+                         <!-- ATIVIDADE!! 
+                        Faixa Salarial
+                        ° 1 Salário minimo
+                        ° 2 Salários mínimos 
+                        ° 3 salários minimos, quase rico
+                        ° Os soulcoders formados, é mais de 8000
+                        (tradicional e em linha )
+                     -->
+
+        <div class="form-group">  <!-- Div Checkbox -->  
+            <p> Faixa Salarial! </p>
+
+            <div class="form-check"> <!-- form-check (bootstrap de form-chek) --> 
+                <input type="radio" value="net" class="form-check-input" name="radio1"> 
+                <label for="checkCampo"  class="form-check-label"> 1 salário </label> 
+            </div>
+
+            <div  class="form-check">   
+                <input type="radio" value="tv"  class="form-check-input" name="radio1"> 
+                <label for="checkCampo" class="form-check-label"> 2 salários  </label>
+            </div>
+
+            <div  class="form-check">
+                <input type="radio" ivalue="jornal"  class="form-check-input" name="radio1"> 
+                <label for="checkCampo" class="form-check-label"> 3 salários </label>
+            </div>
+            <div  class="form-check">
+                <input type="radio" ivalue="jornal"  class="form-check-input" name="radio1"> 
+                <label for="checkCampo" class="form-check-label"> Os Soulcoders formados!!! </label>
+            </div>
+        </div>    
+            
+            <hr>
+
+            <div class="form-group">  <!-- Div Checkbox -->  
+                <p> Faixa Salarial INLINE! </p>
+    
+                <div class="form-check form-check-inline"> <!-- form-check (bootstrap de form-chek) --> 
+                    <input type="radio" value="net" class="form-check-input" name="radio2"> 
+                    <label for="checkCampo"  class="form-check-label"> 1 salário </label> 
+                </div>
+    
+                <div class="form-check form-check-inline">   
+                    <input type="radio" value="tv"  class="form-check-input" name="radio2"> 
+                    <label for="checkCampo" class="form-check-label"> 2 salários  </label>
+                </div>
+    
+                <div class="form-check form-check-inline">
+                    <input type="radio" ivalue="jornal"  class="form-check-input" name="radio2"> 
+                    <label for="checkCampo" class="form-check-label"> 3 salários </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" ivalue="jornal"  class="form-check-input" name="radio2"> 
+                    <label for="checkCampo" class="form-check-label"> Os Soulcoders formados!!! </label>
+                </div>
+            </div>    
+
+
+
+    </form> <!-- FECHAMENTO FORMULÁRIO QUE ABRIU LA EM CIMA-->
+</div>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
