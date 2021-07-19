@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#topo{
+    background-color: blue;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.envelopegl{
+    border: 1px black solid;
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 30px 30px;
+}
+.divsomegl{
+    border: 2px black solid;
+    background-color: aqua;
+    /* width: 198px; */
+    /* height: 100px; */
+    text-align: center;
+    border-radius: 30px;
+}
+#div2bi, #div1bi {
+    padding: 5px;
+    text-align: center;
+    background-color: aqua;
+    text-shadow: 1px 1px white;
+    border: 1px solid black;
+  }
+  
+  #div2bi {
+    padding: 50px;
+    display: none;
+  }
+  .f{
+    /* height: 150px; */
+    width: 150px;
+    background-color:blueviolet;
+    display: block;
+}
+#desf{
+    display: block;
+}
+#caixa1{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa2{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa3{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa4{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa5{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa6{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+#caixa7{
+    margin-top: 20pxpx;
+    margin-bottom: 20px;
+}
+
+  

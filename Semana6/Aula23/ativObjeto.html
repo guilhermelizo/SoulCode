@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OBJETO </title>
+</head>
+<body>
+
+        <script>
+            
+
+
+        // Atividade -
+        // Criem um objeto na forma literal que tenha as informações de uma pessoa
+        // Nome, Idade, CPF, Endereço(Rua, numero, bairro, cidade) e email
+
+        pessoa = {
+            nome: "Guilherme Lizo",
+            idade: "28 anos",
+            cpf: "12345678912",
+            endereco: {
+                rua: "xxx",
+                bairro: "jd das flores",
+                numero: "315"
+            },
+            email: "guilherme.lizo@yahoo.com.br"
+            }
+
+        document.write(
+        `O meu nome é: ${pessoa.nome} <br>
+        A minha idade: ${pessoa.idade} <br>
+        Com o CPF: ${pessoa.cpf} <br>
+        localizado no endereço:  <br>
+            > Rua: ${pessoa.endereco.rua} <br>
+            > Endereço: ${pessoa.endereco.bairro} <br>
+            > N°: ${pessoa.endereco.numero} <br>
+        e meu email: ${pessoa.email} <br>`
+        )
+               
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Efeitos no J-querry</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div id="topo" class="container-fluid">
+            <div class="container">
+                <header class="row justify-content-center align-items-center">
+                    <h1 class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">Apresentação
+                        de Efeitos no J-Querry</h1>
+                </header>
+            </div>
+        </div>
+
+        <div id="caixa1" class="container">
+            <div class="row">
+
+            </div>
+
+        </div>
+
+        <div id="caixa2" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="envelopegl">
+                    <h3> Div com efeito de Sumir e aparecer!</h3>
+                    <input type="button" onclick="divSome()" value="div some" />
+                    <div class="divsomegl">
+                        Esta div vai sumir!
+                        Isto acontece graças ao elemento '.hide()'
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="caixa3" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+                <div onclick="updown()" id="flip">Clicar no painel para ver</div>
+                <div onclick="updown()" id="panel">Os efeitos!</div>
+                <div onclick="updown()" id="div1bi">Clique aqui para ver o efeito slidetoggle</div>
+                <div onclick="updown()" id="div2bi">Você clicou e eu apareci, clique novamente e eu desaparecerei.</div>
+            </div>
+        </div>
+
+        <div id="caixa4" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+                <p class='f'>Vamos fazer uma mágica..</p>
+
+                <button id="desf">Vamos desaparecer</button>
+                <button id="apaf">Vamos aparecer</button>
+            </div>
+        </div>
+
+        <div id="caixa5" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+                <div>
+                    <button id="btnEfeito" onclick="efeito()">Botão ação</button><br>
+                    <div id="btn_acao" style="height:300px; width:300px; background:green" />
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="caixa6" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+
+            </div>
+
+        </div>
+
+
+        <div id="caixa7" class="container">
+            <div class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+
+            </div>
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+        <script type="text/javascript">
+            //1 - Esconde todos os elementos da div
+            let hide = false;
+
+            let divSome = () => {
+                if (hide == false) {
+                    $('.divsomegl').hide();
+                    hide = true;
+                }
+                else {
+                    $('.divsomegl').show();
+                    hide = false;
+                };
+            }
+
+            $(document).ready(function updown() {
+                $("#div1bi").click(function () {
+                    $("#div2bi").slideToggle("slow");
+                });
+            });
+
+            function efeito() {
+
+
+                //Sem parâmetros: o efeito é executado em 400ms
+                $("#btn_acao").slideUp();
+                // Parâmetro com a duração em ms do efeito
+                $("#btn_acao").slideUp(1000);
+                // Parâmetro slow: o efeito é executado em 600ms
+                $("#btn_acao").slideUp("slow");
+                // Parâmetro fast: o efeito é executado em 200ms
+                $("#btn_acao").slideUp("fast");
+                // Informada duração e função de callback
+                $("#btn_acao").slideUp("fast",
+
+                );
+            }
+
+
+            $(function () {
+                //conteúdo das listagens
+                $("#divfadeinoutgl").hide();
+                $("#btnfadegl").click(function () {
+                    $("#divfadeinoutgl").fadeIn();
+                    $("#divfadeinoutgl").fadeIn(100);
+                    $("#divfadeinoutgl").fadeIn("slow");
+                    $("#divfadeinoutgl").fadeIn("slow");
+                    $("#divfadeinoutgl").fadeIn("slow", function () {
+                    }
+                    );
+                });
+            });
+            $(document).ready(function () {
+                $("#desf").click(function () {
+                    $("p").hide(1000);
+                });
+                $("#apaf").click(function () {
+                    $("p").show(1000);
+                });
+            });
+
+
+            function efeito() {
+
+
+                //Sem parâmetros: o efeito é executado em 400ms
+                $("#btn_acao").slideUp();
+                // Parâmetro com a duração em ms do efeito
+                $("#btn_acao").slideUp(1000);
+                // Parâmetro slow: o efeito é executado em 600ms
+                $("#btn_acao").slideUp("slow");
+                // Parâmetro fast: o efeito é executado em 200ms
+                $("#btn_acao").slideUp("fast");
+                // Informada duração e função de callback
+                $("#btn_acao").slideUp("fast",
+
+                );
+            }
+
+            function efeitoDown() {
+
+
+                //Sem parâmetros: o efeito é executado em 400ms
+                $("#btn_acao1").slideDown();
+                //Parâmetro com a duração em ms do efeito
+                $("#btn_acao").slideDown(1000);
+                //Parâmetro slow: o efeito é executado em 600ms
+                $("#btn_acao").slideDown("slow");
+                //Parâmetro fast: o efeito é executado em 200ms
+                $("#btn_acao").slideDown("fast");
+                //Informada duração e função de callback
+                $("#btn_acao").slideDown("fast");
+
+            }
+
+
+            function efeitoDown() {
+
+                //Sem parâmetros: o efeito é executado em 400ms
+                $("#btn_acao").slideToggle();
+                //Parâmetro com a duração em ms do efeito
+                $("#btn_acao").slideToggle(1000);
+                //Parâmetro slow: o efeito é executado em 600ms
+                $("#btn_acao").slideToggle("slow");
+                //Parâmetro fast: o efeito é executado em 200ms
+                $("#btn_acao1").slideToggle("fast");
+
+            }
+
+
+
+
+        </script>
+        <main>
+            <div id="topo" class="container-fluid">
+                <div class="container">
+                    <footer class="row justify-content-center align-items-center">
+                        <h1 class="col-12 col-md12 col-sm-12 d-flex justify-content-center align-items-center">
+                            Apresentação de Efeitos no J-Querry</h1>
+                    </footer>
+                </div>
+            </div>
+</body>
+
+</html>

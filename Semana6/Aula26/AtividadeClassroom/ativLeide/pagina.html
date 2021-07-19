@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .meucontainer{
+            background-color:rgb(215, 245, 250);
+        }
+        .row div{
+            background-color: rgb(198, 238, 240);
+            border: 1px solid;
+            padding:20px;
+        }
+        .botaolegal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+          border: 1px solid black;
+          width: 100%;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- ATIVIDADE!
+        Crie uma pagina de jornal   seguindo os seguintes critérios:
+        1 A visualização da página deve ser mantida para Telas com tamanho maior ou igual a 768px (medio);
+        2 você deve incluir uma tabela com números, estimativas... (fictício ou não), apenas para praticarmos as classes de tabelas ;)
+          Deve conter um formato de lista que exiba em uma nova guia(tab) parágrafos tratando sobre o assunto.
+        3 No texto apresentado na guia do item 3, vc deve deixar o texto justificado.
+        4 No ultimo paragrafo, vc deve colocar todas as primeiras letras de cada palavra em maiúsculo.
+        5 Crie também uma lista instruindo ao usuário o que cada aviso do texto corresponde. Exemplo:
+          - vermelho - atenção vc ja está nesta pagina por muito tempo.
+          - amarelo - você precisa descançar... 
+    -->
+
+    <div class="container meucontainer">
+        <div class="row">
+            <h1> Atividade Página com bootstrap!
+                 </h1>
+
+            <!-- -->
+            <div class="col-md-12"> <!-- PRIMEIRA LINHA, HEAD DO SITE -->
+                <h1> Seja bem vindo ao meu site teste! </h1>
+                <p class="text-right"> Aqui vamos testar algumas funcionalidades do bootstrap que antes você chorava na unha com o css!!! </p>
+
+                <p class="text-center text-capitalize"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam et ea possimus praesentium labore quasi placeat quia deleniti ad, eligendi eos id ipsum cumque consequuntur repellendus necessitatibus exercitationem error.</p>
+                
+                
+            <!-- BARRA DE NAVEGAÇÃO -->
+            <nav class="navbar navbar-dark bg-light">
+              <!-- Navbar content -->
+                <a class="nav-item nav-link " href="#">Noticia 1</a>
+                <a class="nav-item nav-link " href="#">Noticia 2</a>
+                <a class="nav-item nav-link " href="#">Noticia 3</a>
+                <a class="nav-item nav-link " href="#">Noticia 4</a>
+            </nav>
+            <!--//////////////////////////-->
+            <!-- FINAL BARRA DE NAVEGAÇÃO -->
+            </div>
+            
+
+            <div class="card col-md-4" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"> Você está apanhando? </h5>
+                <p class="card-text"> Então está no caminho certo!</p>
+                <a href="#" class="btn btn-primary botaolegal"> Veja mais! </a>
+              </div>
+            </div>
+
+            <div class="col-md-8"> <!-- ASIDE DA DIREITA -->
+              <h1 class="text-center"> Ultimas noticias!!! </h1>
+              <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Nº</th>
+                      <th>Título</th>
+                      <th>Local</th>
+                      <th>Reportagem:</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table table-hover ">
+                    <tr>
+                      <th>1</th>
+                      <td> O melhor cachorro quente do mundo! </td>
+                      <td> Osasco </td>
+                      <td> Fernando </td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td> Calor? Frio? Chuva? Tudo! </td>
+                      <td> SP </td>
+                      <td> Marina </td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td> Beba água! </td>
+                      <td> SP </td>
+                      <td> Javiscreiv </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-12"> 
+              <section>
+                <h2 class="text-center"> Mais informações </h2>
+                <div class="list-group">
+                    <ul class="list-group">
+                        <li class="list-group-item"> </li>
+                        <li class="list-group-item list-group-item-primary"> Você precisa estudar! </li>
+                        <li class="list-group-item list-group-item-secondary"> Você precisa tomar agua! </li>
+                        <li class="list-group-item list-group-item-success"> Você precisa se exercitar! </li>
+                        <li class="list-group-item list-group-item-danger"> Você está a Muito tempo nesta página! </li>
+                        <li class="list-group-item list-group-item-warning"> Você precisa descansar! </li>
+                        <li class="list-group-item list-group-item-info"> Você precisa tomar café! </li>
+                        <li class="list-group-item list-group-item-light"> Aloha! </li>
+                        <li class="list-group-item list-group-item-dark"> Beba bastante agua!  </li>
+                      </ul>
+                </div>
+            </section>
+            </div>
+            <div class="footer"> 
+              <footer>
+                <p class="text-justify text-capitalize"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam et ea possimus praesentium labore quasi placeat quia deleniti ad, eligendi eos id ipsum cumque consequuntur repellendus necessitatibus exercitationem error.</p>
+
+
+                <hr>
+                Página desenvolvida por: Guilherme Lizo
+              </footer>
+            </div> <!--Fechamento Div Footer -->
+        </div>
+    </div>
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

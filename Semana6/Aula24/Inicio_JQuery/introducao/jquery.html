@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    //$(selector) ação()
+
+    //1 - Esconde todos os elementos p
+    let hide = false;
+
+    let escondeParagrafo = () => {
+        if(hide == false) {
+            $('p').hide();
+            hide = true;
+        }
+        else{
+            $('p').show();
+            hide = false;
+        }
+    }
+    //2- Esconde os elementos da id test
+    function escondeId(){
+        $("#botaoex1").hide();
+    }
+
+    //3 Esconde os elementos da classe "test1"
+    function escondeClass(){
+        $(".test1").hide();
+    }
+
+    //4 esconde todos os elementos do texto
+    function escondeAll(){
+        $("*").hide();
+    }
+
+    //5 esconde todos os elementos href
+    function escondeHref(){
+        $("[href]").hide();
+    }
+    //6 esconde as rows da tabela
+    function esconderows(){
+        $("[href]").hide();
+    }
+    
+    </script>
+
+<!-- 1. -->
+<div>
+    <input type="button" onclick="escondeParagrafo()" value="esconde Paragrafo" />
+    <p>
+        Este paragrafo será escondido.
+    </p>
+</div>
+<br>
+
+<!-- 2. -->
+<div>
+    <input type="button" onclick="escondeId()" value="Esconde ID" />
+    <h1 id="test">
+        Este h1 com id="test1" será escondido.
+    </h1>
+</div>
+<br>
+
+<!-- 3. -->
+<div>
+    <input type="button" onclick="escondeClass()" value="Esconde Class" />
+    <h2 class="test1">
+        Este h2 com class="test" será escondido.
+    </h2>
+</div>
+<br>
+  <!-- 4. -->
+  <div>
+    <input type="button" onclick="escondeAll()" value="Esconde todos os elementos" />
+</div>
+<br>
+<br>
+<!-- 5. -->
+<div>
+  <input type="button" onclick="escondeHref()" value="Esconde todos os elementos Href" /><br>
+  <a href="https://soulcodeacademy.org">Página da SoulCode</a><br>
+  <a href="https://www.tntenergydrink.com.br">Página TNT</a>
+</div>
+<br>
+<!-- 6. -->
+<div>
+<input type="button" onclick="esconderows()" value="Esconde todos os elementos ímpar da tabela" />
+<table border="1">
+    <tr>
+        <td>par1</td>
+        <td>par2</td>
+        
+    </tr>
+    <tr>
+        <td>ímpar1</td>
+        <td>ímpar2</td>
+    
+    </tr>
+    <tr>
+        <td>par1</td>
+        <td>par2</td>
+    </tr>
+    <tr>
+        <td>ímpar1</td>
+        <td>ímpar2</td>
+    
+    </tr>
+</table>
+
+</div>
+<br>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

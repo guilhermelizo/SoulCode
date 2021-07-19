@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      img{
+        margin: 10px;
+        width: 300px;
+      }
+
+    </style>
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body> 
+
+    <!-- data-interval="escolhatempo"   >>>>> Coloque dentro do carrosel para escolher o tempo de transição-->
+     
+    <div class="col-mds-12">
+        <div>
+          <img src="imagem.jpg" class="img-thumbnail" alt="imagem"> <!-- Thumbnail >>> coloca uma borda e tira as pontas -->  <br><br>
+        </div>
+        <div>
+          <img src="SoulCodeIMG.png" class="img-rounded" alt="imagem">  <!-- rounded   >>> arredonda as pontas -->  <br><br>
+        </div>
+        <div>
+          <img src="imagem.jpg" class="img-fluid" alt="imagem">      <!-- Fluid    >>> deixa a imagem fluida o elemento pai -->  <br><br>
+        </div>
+    </div>  
+    <hr>
+    <!------------------------------------------->
+    <!----------- CAROUSEL----------------------->
+    <div id="carouselexemplo" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <h3> Slide</h3>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="imagem.jpg" alt="Primeiro Slide" style="width:50%">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="SoulCodeIMG.png" alt="Segundo Slide" style="width:50%">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="carta.png" alt="Terceiro Slide" style="width:50%">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!------------------------------------------->
+    <!----------- COM CONTROLADORES ------------->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <h3> Com controladores </h3>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carta.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagem.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="SoulCodeIMG.png" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      <hr>
+      <!------------------------------------------->
+      <!--- COM CONTROLADORES E INDICADORES ------->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <h3> Com controladores e indicadores </h3>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carta.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagem.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="SoulCodeIMG.png" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      <hr>
+      <!------------------------------------------->
+      <!------------- COM CROSSFADE --------------->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000">
+          <h3>Com crossfade</h3>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carta.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagem.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="SoulCodeIMG.png" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      
+      <hr>
+      <!------------------------------------------->
+      <!------------- COM LEGENDA ----------------->
+      <h3> Com legenda</h3>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+           <div class="carousel-item active">
+              <img src="carta.png" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TESTE 1</h5>
+                <p> AQUI VAI UM TEXTO TESTE 1</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="imagem.jpg" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TESTE 2</h5>
+                <p> AQUI VAI UM TEXTO TESTE 2</p>
+              </div>
+            </div>
+
+            <div class="carousel-item active">
+              <img src="SoulCodeIMG.png" alt="primeiro slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TESTE 3</h5>
+                <p> AQUI VAI UM TEXTO TESTE 31</p>
+              </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+    <hr>
+
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

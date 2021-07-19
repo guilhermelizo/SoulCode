@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        background-color: tomato;
+        height: 30px;
+        margin: 10px;
+        width: 150px;
+    }   
+    #container{
+        align-items: center;
+        border: 2px solid rgb(152, 161, 152);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 100px;
+        padding: 30px;
+        width: 480px;
+    }         
+    #div1, #div2, #div3, #div4, #div5{
+        border: 1px solid;
+        height: 100px;
+        margin: 20px;
+        text-align: center;
+        width: 100px;
+    }
+    #botoes{
+        bottom: 500px;
+        float: right;
+        position: absolute;
+        right: 300px;
+    }        
+</style>
+
+
+
+
+  <title>Document</title>
+</head>
+<body>
+    
+    <div id="botoes">
+        <button type="button" onclick="mudaBotao()"> diferentes </button>   
+        <button type="button" onclick="igualBotao()"> Iguais </button>
+        <button type="button" id="botaoSumir"> Desaparece </button> 
+    </div>
+
+  <div id="container">
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    
+  </div>   
+
+  <script>
+      //Clique no 1o botao e altera a altura, largura e cor das 5divs
+      //Cada uma com um efeito jquery diferente
+    function mudaBotao(){
+        $("#div1").height(110).width(100).css("background-color" , "blue").fadeIn();
+        $("#div2").height(120).width(120).css("background-color" , "red").fadeOut().fadeIn();
+        $("#div3").height(130).width(130).css("background-color" , "green").slideDown();
+        $("#div4").height(140).width(140).css("background-color" , "gray").slideUp();
+        $("#div5").height(150).width(150).css("background-color" , "blue").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+
+
+    //Clique no 2o botao e todas as divis ficarão azuis, 
+    //com largura de 300px e altura de 150px
+
+    function igualBotao(){
+        $("#div1, #div2, #div3, #div4 ,#div5").height(100).width(100).css("background-color" , "blue");
+    }
+
+
+    // Duplo clique no 3o botao, esconde as divs 2 e 3
+    $("#botaoSumir").dblclick(function(){
+        $("#div2, #div3").fadeOut();
+    })
+
+
+  </script>
+
+    
+
+</body>
+</html>

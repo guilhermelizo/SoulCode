@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OBJETO </title>
+</head>
+<body>
+
+        <script>
+            
+
+
+        // Atividade -
+        // Crie um compra, onde tenha as seguintes propriedades:
+        // id, dataCompra, valorTotal, item(idProduto, nomeProduto, quantidade, subtotal)
+        //Mostre dataCompra, valorTotal, nomeProduto e quantidade
+
+        compra = {
+            id: "999",
+            dataCompra: "15/06/2021",
+            valorTotal: "865,94",
+            item: {   // Objeto dentro de um objeto
+                idProduto: "AB45",
+                nomeProduto: "Piscina de Bolinhas show",
+                quantidade: "10",
+                subtotal: "86,59"
+            },
+            }
+
+
+            //Extraindo dataCompra de dentro do meu Objeto
+            let {dataCompra} = compra;   //A informação foi extraida em uma variavel
+            let {item} = compra;  // Como o item é um objeto (tem varios valores), ele é extraido como objeto simples e seus dados
+            console.log(dataCompra)
+
+            // Let {euQueroQueProcure} = objeto.valor
+                    // ex:  {quantidade} = {item.quantidade}
+
+
+        document.write(
+        `A compra foi realizada em ${compra.dataCompra} <br>
+         O total gasto: ${compra.valorTotal} <br>
+         Produto comprado: ${compra.item.nomeProduto} <br>
+         Na quantidade de: ${compra.item.quantidade}
+        `
+        )
+               
+        </script>
+    
+</body>
+</html>

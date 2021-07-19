@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //Atividade
+        // Crie um objeto que tenha as propriedades a e b
+        // Criar as funções dentro do objeto Soma, subtrai, divide, multiplica
+
+const calcula = {
+    propriedadeA: parseFloat(prompt("Digite valor A")),
+    propriedadeB: parseFloat(prompt("Digite valor B")),
+    soma: function(){
+        return `A Soma é: ${parseFloat(this.propriedadeA + this.propriedadeB).toFixed(2)} <br>` 
+    },
+    subtrai: function(){
+        return `A Subtração é: ${parseFloat(this.propriedadeA - this.propriedadeB).toFixed(2)}<br>` 
+    },
+    divide: function(){
+        return `A Divisão é: ${parseFloat(this.propriedadeA / this.propriedadeB).toFixed(2)}<br>` 
+    },
+    multiplica: function(){
+        return `A Multiplicação é: ${parseFloat(this.propriedadeA * this.propriedadeB).toFixed(2)}<br>` 
+    },
+}
+
+document.write(calcula.soma());
+document.write(calcula.subtrai());
+document.write(calcula.divide());
+document.write(calcula.multiplica());
+
+        
+    </script>
+    
+</body>
+</html>

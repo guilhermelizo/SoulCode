@@ -1,0 +1,49 @@
+.envelope{
+
+}
+
+.navegador{
+    background-color: cornflowerblue;
+}
+
+a{
+    color: white;
+    margin-left: 50px;
+}
+
+p{
+    margin: 15px;
+}
+
+.botaoadicionar{
+    margin: 15px
+}
+
+img{
+    background-image: url(imagem.jpg);
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+}
+
+
+/********************************************/
+/*********** LINHA 1 ************************/
+/********************************************/
+
+.produtos{
+    margin:15px;
+}
+
+.linha1Esquerda{
+    margin-top: 10px;
+}
+/********************************************/
+/*********** LINHA 2 ************************/
+/********************************************/
+
+
+
+
+
+

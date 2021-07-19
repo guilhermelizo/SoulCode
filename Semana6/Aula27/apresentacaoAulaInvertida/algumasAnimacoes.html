@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação - JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #MSBotao {
+                height: 100%;
+                margin: 5%;
+        }
+
+        button{border: 1px solid black;
+            width: 140px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11px;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #quadrado{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="MSBotao">
+    <button type="button" id="MSBotao1">Eu sou um botão!</button>
+    </div>
+    <button  onclick="efeitoBotao()">Animar botão!</button>
+    <button  onclick="resetarBotao()">Resetar botão!</button>
+
+    <script>
+        function efeitoBotao() {
+            $("#MSBotao1").animate({
+                height: "300px", 
+                width: "300px"}, 
+                )           
+        }
+
+        function resetarBotao(){
+            $("#MSBotao1").animate({
+                width: "140px",
+                height: "45px",
+            })
+        }
+    </script>
+
+        <p>Temos 3 parâmetros que podemos passar: <br>
+        - Velocidade - ajusta a velocidade do efeito (O padrão é 400) <br>
+        - Easing - especifica a velocidade do elemento em diferentes pontos <br>
+    (velocidade constante ou mais devagar no começo/fim, mas veloz no meio. <br>
+        - Callback - chama uma função assim que terminada a animação.<br>
+        <br><b>Exemplos: </b></p>
+
+    <button type="button" id="MSBotao2">Eu sou um botão devagar!</button> <br>
+    <button  onclick="efeitoBotaoRapido()">Animar botão!</button>
+    <button  onclick="resetarBotao2()">Resetar botão!</button>
+
+        <script>
+        function efeitoBotaoRapido() {
+            $("#MSBotao2").animate({
+                height: "300px", 
+                width: "300px"},5000, 
+                )           
+        }
+        function resetarBotao2(){
+            $("#MSBotao2").animate({
+                width: "140px",
+                height: "45px",
+            })
+        }
+        </script>
+        <br><br><br>
+
+    <button type="button" id="MSBotao3">Eu sou um botão rápido!</button> <br>
+    <button id="btn1" onclick="efeitoBotaoDevagar()">Animar botão!</button>
+    <button id="btn2" onclick="resetarBotao3()">Resetar botão!</button>
+
+        <script>
+        function efeitoBotaoDevagar() {
+            $("#MSBotao3").animate({
+                height: "300px", 
+                width: "300px"},50, 
+                )           
+        }
+
+        function resetarBotao3(){
+            $("#MSBotao3").animate({
+                width: "140px",
+                height: "45px",
+            })
+        }
+        </script>
+
+        <br><br><br>
+        <p>Podemos adicionar um efeito atrás do outro. Funcionam como uma fila:</p>
+
+        <div id="quadrado"></div>
+        
+        <script>
+        $("#quadrado").click(function(){
+            var quadrado = $("#quadrado");
+            quadrado.animate({height: '300px', opacity: '0.4'}, "slow");
+            quadrado.animate({width: '300px', opacity: '0.8'}, "slow");
+            quadrado.animate({height: '100px', opacity: '0.4'}, "slow");
+            quadrado.animate({width: '100px', opacity: '0.8'}, "slow");
+          }); 
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OBJETO </title>
+</head>
+<body>
+
+        <script>
+            /* FORMA TRADICIONAL
+                var nomeObjeto = new Object();
+                nomeObjeto.nomePropriedade = valor;
+            */
+             let carro = new object() //novo objeto declarado, com 3 propriedades (modelo, ano e cor)
+             carro.modelo = "Fiat";  // e cada um com seu valor (fiat, 1999, preto)
+             carro.ano = 1999;
+             carro.cor = "Preto;"
+
+
+
+
+            /* FORMA SIMPLIFICADA, inicializador de objetos, notação literal
+                var nomeObjeto = {
+                    nomePropriedade: valor,
+                    propriedade: valor
+                } 
+            */  
+                let carro = {
+                    modelo: "Fiat",    // O que vem antes dos 2 pontos ele entende como propriedade
+                    ano: 1999.          //No caso se fosse outra variavel ela viria entre aspas e seria chamada 
+                    cor: "Preto"        //entre colchetes, ex: ${carro.modelo} ficaria >>>> ${carro.["aqui"]}
+                }
+
+                document.write(
+                    `Veículo modelo ${carro.modelo} com a cor ${carro.cor}`
+                )
+
+
+        
+
+                
+
+        </script>
+    
+</body>
+</html>

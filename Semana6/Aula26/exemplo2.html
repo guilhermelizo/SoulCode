@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- meu css -->
+    <style>
+        .meucontainer{
+            background-color:blueviolet;
+        }
+        .row div{
+            background-color:teal;
+            border:1px solid;
+        }
+        .row{
+          background-color: antiquewhite;
+          height: 150px;
+          margin: 10px 0;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!--
+          align-items-start  >>> Posicionado no top
+          align-items-center >>> Posicionado no centro
+          align-items-end    >>> Posicionado no fundo
+       -->
+
+    <div class="container meucontainer">
+      <h1>Alinhamento Vertical</h1>  
+      
+      <div class="row align-items-start">
+          <div class="col-md-4">div</div>
+          <div class="col-md-4">div</div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-4">div</div>
+          <div class="col-md-4">div</div>
+        </div>
+
+        <div class="row align-items-end">
+          <div class="col-md-4">div</div>
+          <div class="col-md-4">div</div>
+        </div>
+    </div>
+
+      <!--
+          justify-content-start  >>> Posicionado a esquerda
+          justify-content-center >>> Posicionado ao centro
+          justify-content-end    >>> Posicionado a direita
+       -->
+
+    <div class="container meucontainer">
+      <h1>Alinhamento Horizontal</h1>  
+      <div class="row justify-content-start">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+    </div>
+
+    <!--
+          justify-content-start  +  align-items-start  
+          justify-content-center +  align-items-center 
+          justify-content-end    +  align-items-end    
+       -->
+
+    <div class="container meucontainer">
+      <h1>Alinhamento Horizontal e Vertical </h1>  
+      <div class="row justify-content-end row align-items-end">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+        <div class="row justify-content-center row align-items-end">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+        <div class="row justify-content-start row align-items-end">
+          <div class="col-4">div</div>
+          <div class="col-4">div</div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
