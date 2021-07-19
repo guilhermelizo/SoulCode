@@ -17,4 +17,7 @@ Continuidade do módulo e projeto de finalização com os estudos do CSS3.
 Inicio Bootstrap.
 
 ## Semana 6
-Continuidade do módulo e projeto de finalização com os estudos do Bootstrap.
+Continuidade do módulo Bootstrap.
+
+## Semana 7
+Projeto de finalização Bootstrap, revisão e exercícios JS e início do módulo React Native
