@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "aulaFirebase",
+    "slug": "aulaFirebase",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "aulaFirebase"
+}
