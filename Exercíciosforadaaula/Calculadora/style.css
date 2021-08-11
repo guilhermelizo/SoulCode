@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    align-items: center;
+}
+
+.envelope{
+    border: 5px black solid;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+}
+
+.calculadora{
+    border: 4px gray solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.visor{
+    border: 1px red solid;
+}
+
+/* COMEÇANDO OS BOTOES */
+.botoes{
+    border: green 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************** PRIMEIRA LINHA ********************/
+.linha1{
+    border: 1px blue solid;
+    display: flex;
+    width: 100%;
+    height: 20px;
+
+    /* OPERADORES */
+}
+.botaosoma{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botaosubtrai{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botaomultiplica{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botaodivide{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+/****************************** SEGUNDA LINHA ********************/
+.linha2{
+    border: 1px blue solid;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+.botao1{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao2{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao3{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao4{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+/****************************** TERCEIRA LINHA ********************/
+.linha3{
+    border: 1px blue solid;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+.botao5{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao6{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao7{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao8{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+/****************************** QUARTA LINHA ********************/
+.linha5{
+    border: 1px blue solid;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+.botao9{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao0{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botaoigual{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botaoclear{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
