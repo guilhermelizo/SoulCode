@@ -40,11 +40,12 @@ void main() {
   List? dados;
 
   // Mostre se o numero tem valor e se é par.
-  var numeroRecebe = numero.isEven;  //trocar para 'numero?' retirei o ? pois ficava dando 'erro' no vscode kk
+  var numeroRecebe = numero
+      .isEven; //trocar para 'numero?' retirei o ? pois ficava dando 'erro' no vscode kk
   print(numeroRecebe);
 
   // Acessem o length de dados sem fazer
-  // null-acheck
+  // nulla-check
   // ignore: unused_local_variable
   var quantidade = dados?.length; //quantidade pode ser nula
 
