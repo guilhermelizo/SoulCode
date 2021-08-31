@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_portifolio/pages/home_page.dart';
-import 'package:projeto_portifolio/pages/tecnologias_page.dart';
 
 void main() {
   runApp(App());
