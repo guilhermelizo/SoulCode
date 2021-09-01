@@ -16,10 +16,10 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   openwhatsapp(String num, String texto) async {
-    var whatsapp = num;
-    var mensagem = texto;
-    var whatsappURlAndroid = "whatsapp://send?phone=$whatsapp&text=$mensagem";
-    var whatappURLIos = "https://wa.me/\$whatsapp?text=\$%7BUri.parse(mensagem)%7D";
+    var whatsappURlAndroid =
+        "https://api.whatsapp.com/send?phone=551170530338text=Ol%C3%A1!";
+    var whatappURLIos =
+        "https://wa.me/\$whatsapp?text=\$%7BUri.parse(mensagem)%7D";
     if (Platform.isIOS) {
       // for iOS phone only
       await launch(whatappURLIos, forceSafariVC: true);
@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
       await launch(whatsappURlAndroid);
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                       new MaterialPageRoute(builder: (context) => HomePage()));
                 }),
             ListTile(
-                leading: Icon(Icons.person),
+                leading: Icon(Icons.military_tech),
                 title: Text("Tecnologias Conhecidas"),
                 onTap: () {
                   Navigator.push(
@@ -66,22 +67,22 @@ class _HomePageState extends State<HomePage> {
                           builder: (context) => TecnologiasPage()));
                 }),
             ListTile(
-                leading: Icon(Icons.person),
-                title: Text("Curriculum"),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      new MaterialPageRoute(
-                          builder: (context) => CurriculumPage()));
-                }),
-            ListTile(
-                leading: Icon(Icons.person),
+                leading: Icon(Icons.print),
                 title: Text("Projetos Realizados"),
                 onTap: () {
                   Navigator.push(
                       context,
                       new MaterialPageRoute(
                           builder: (context) => ProjetosPage()));
+                }),
+            ListTile(
+                leading: Icon(Icons.list),
+                title: Text("Curriculum"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      new MaterialPageRoute(
+                          builder: (context) => CurriculumPage()));
                 }),
           ],
         ),
@@ -94,9 +95,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [ Container(
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Container(
                 height: 150,
                 width: 150,
                 child: CircleAvatar(
@@ -105,35 +105,97 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-           ] ),
-            Text("Seja bem vindo ao meu aplicativo portifólio!", textAlign: TextAlign.justify,),
-            Text("Me chamo Guilherme Lizo, tenho 29 anos.", textAlign: TextAlign.justify,),
-            Text("Estudante de Análise e Desenvolvimento de Sistemas e atualmente realizando o bootcamp", textAlign: TextAlign.justify,),
-            Text("Front End e Mobile realizado pela Soulcode Academy.", textAlign: TextAlign.justify,),
-            Text("", textAlign: TextAlign.justify,),
-            Column(
-              children: [
+            ]),
+            Text(
+              "Seja bem vindo ao meu aplicativo portifólio!",
+              textAlign: TextAlign.justify,
+            ),
+            Text(
+              "Me chamo Guilherme Lizo, tenho 29 anos.",
+              textAlign: TextAlign.justify,
+            ),
+            Text("Tenho como meta me especializar na área de desenvolvimento mobile."),
+
+            Text(
+              "Estudante de Análise e Desenvolvimento de Sistemas e atualmente realizando o bootcamp",
+              textAlign: TextAlign.justify,
+            ),
+            Text(
+              "Front End e Mobile realizado pela Soulcode Academy.",
+              textAlign: TextAlign.justify,
+            ),
+            Column(children: [
+              // Container body parte inferior
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children:[ Column(children: [
+                  Text("Quer conhecer?", style: TextStyle(fontSize: 11)),
+                  Container(
+                    padding: EdgeInsets.all(3),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                    child: InkWell(
+                      child: Image.asset(
+                        '../lib/assets/images/soulcode.jpeg',
+                        width: 30,
+                      ),
+                      onTap: () => launch(
+                        'https://soulcodeacademy.org/',
+                      ),
+                    ),
+                  ),
+                ]),
+              ]),
+              Text(
+                "",
+                textAlign: TextAlign.justify,
+              ),
+
+              // **************************************************
+              // ************ Botões de Contato *******************
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Image.asset('../lib/assets/images/github.png', width: 40),
-                  Image.asset('../lib/assets/images/linkedin.png', width: 40),
+                  InkWell(
+                    child: Image.asset(
+                      '../lib/assets/images/github.png',
+                      width: 50,
+                    ),
+                    onTap: () => launch(
+                      'https://www.github.com/guilhermelizo',
+                    ),
+                  ),
+                  InkWell(
+                    child: Image.asset(
+                      '../lib/assets/images/linkedin.png',
+                      width: 50,
+                    ),
+                    onTap: () => launch(
+                      'https://www.linkedin.com/in/guilhermelizo/',
+                    ),
+                  ),
                 ],
               ),
+              Text("Contato:"),
               Text("@guilhermelizo"),
+
+              // *****************************************************
+              // ****************** Botão Whatsapp *******************
               FloatingActionButton(
-                    onPressed: () =>
-                        // launchWhatsApp(phone: '555195887955', message: 'Olá!'),
-                        openwhatsapp('551170530338', 'Olá Guilherme!'),
-                    child: FaIcon(
-                      FontAwesomeIcons.whatsapp,
-                      color: Theme.of(context).iconTheme.color,
-                    ),
-                    backgroundColor: Theme.of(context)
-                        .floatingActionButtonTheme
-                        .backgroundColor,
-                  ),
+                onPressed: () =>
+                    // launchWhatsApp(phone: '555195887955', message: 'Olá!'),
+                    openwhatsapp('551170530338', 'Olá Guilherme!'),
+                child: FaIcon(
+                  FontAwesomeIcons.whatsapp,
+                  color: Theme.of(context).iconTheme.color,
+                ),
+                backgroundColor:
+                    Theme.of(context).floatingActionButtonTheme.backgroundColor,
+              ),
+
             ]),
           ],
         ),
