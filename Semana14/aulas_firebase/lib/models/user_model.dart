@@ -4,7 +4,7 @@ class UserModel {
 
   UserModel({
     required this.nome,
-     this.key,
+    this.key,
   });
 
   static UserModel fromMap(Map<String, dynamic> map) {

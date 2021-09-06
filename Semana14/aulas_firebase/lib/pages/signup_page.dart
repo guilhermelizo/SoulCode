@@ -1,20 +1,17 @@
-import 'package:aulas_firebase/controllers/user_controller.dart';
-import 'package:aulas_firebase/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import '../models/user_model.dart';
+import '../controllers/user_controller.dart';
 
 class SignupPage extends StatefulWidget {
-  SignupPage({Key? key}) : super(key: key);
-
   @override
   _SignupPageState createState() => _SignupPageState();
 }
 
 class _SignupPageState extends State<SignupPage> {
-  String nome = '';
-  String email = '';
-  String senha = '';
+  String nome = "";
+  String email = "";
+  String senha = "";
 
   late final userController = Provider.of<UserController>(
     context,
@@ -29,25 +26,20 @@ class _SignupPageState extends State<SignupPage> {
       ),
       body: Form(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
               TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Nome',
-                ),
+                decoration: InputDecoration(labelText: 'Nome'),
                 onChanged: (texto) => nome = texto,
               ),
               TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                ),
+                decoration: InputDecoration(labelText: 'Email'),
                 onChanged: (texto) => email = texto,
               ),
               TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Senha',
-                ),
+                decoration: InputDecoration(labelText: 'Senha'),
+                obscureText: true,
                 onChanged: (texto) => senha = texto,
               ),
               ElevatedButton(
@@ -57,7 +49,7 @@ class _SignupPageState extends State<SignupPage> {
 
                   Navigator.pop(context);
                 },
-                child: Text('Cria conta'),
+                child: Text("Criar conta"),
               )
             ],
           ),

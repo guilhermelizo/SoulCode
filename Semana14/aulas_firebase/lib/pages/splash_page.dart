@@ -1,13 +1,11 @@
-import '../controllers/user_controller.dart';
-import 'home_page.dart';
-import 'login_page.dart';
-import '../widgets/splash_loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../widgets/splash_loading_widget.dart';
+import 'login_page.dart';
+import 'home_page.dart';
+import '../controllers/user_controller.dart';
 
 class SplashPage extends StatefulWidget {
-  SplashPage({Key? key}) : super(key: key);
-
   @override
   _SplashPageState createState() => _SplashPageState();
 }
@@ -17,12 +15,12 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Consumer<UserController>(
       builder: (context, userController, child) {
-        switch (userController.authSate) {
-          case AuthSate.signed:
+        switch (userController.authState) {
+          case AuthState.signed:
             return HomePage();
-          case AuthSate.unsigned:
+          case AuthState.unsigned:
             return LoginPage();
-          case AuthSate.loading:
+          case AuthState.loading:
             return SplashLoadingWidget();
         }
       },

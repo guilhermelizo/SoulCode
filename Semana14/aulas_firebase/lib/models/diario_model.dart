@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DiarioModel {
@@ -10,28 +11,28 @@ class DiarioModel {
   final String diario;
   final Uint8List? imagem;
 
-  DiarioModel(
-      {this.key,
-      required this.ownerKey,
-      required this.titulo,
-      required this.autor,
-      required this.local,
-      required this.diario,
-      this.imagem});
+  DiarioModel({
+    this.key,
+    required this.ownerKey,
+    required this.titulo,
+    required this.autor,
+    required this.local,
+    required this.diario,
+    this.imagem,
+  });
 
   static DiarioModel fromMap(Map<String, dynamic> map, [String? key]) =>
       DiarioModel(
-        key: map['key'],
+        key: key,
         ownerKey: map['ownerKey'],
         titulo: map['titulo'],
         autor: map['autor'],
         local: map['local'],
         diario: map['diario'],
-        imagem: map['image']?.bytes,
+        imagem: map['imagem']?.bytes,
       );
 
   Map<String, dynamic> toMap() => {
-        'key': key,
         'ownerKey': ownerKey,
         'titulo': titulo,
         'autor': autor,
@@ -39,4 +40,9 @@ class DiarioModel {
         'diario': diario,
         'imagem': imagem != null ? Blob(imagem!) : null,
       };
+
+  @override
+  String toString() {
+    return 'DiarioModel(key: $key, ownerKey: $ownerKey, titulo: $titulo, autor: $autor, local: $local, diario: $diario)';
+  }
 }

@@ -1,16 +1,16 @@
-// signed = usuário logado
-// unsigned = usuário deslogado
-// loading = usuário carregando
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../models/user_model.dart';
 
-enum AuthSate { signed, unsigned, loading }
+/// signed - usuário logado
+/// unsigned - usuário deslogado
+/// loading - usuário carregando
+enum AuthState { signed, unsigned, loading }
 
 class UserController extends ChangeNotifier {
-  AuthSate authSate = AuthSate.loading;
+  AuthState authState = AuthState.loading;
+  late UserModel model;
 
   final _auth = FirebaseAuth.instance;
   final _db = FirebaseFirestore.instance;
@@ -18,16 +18,16 @@ class UserController extends ChangeNotifier {
   User? get user => _auth.currentUser;
 
   UserController() {
-    _auth.authStateChanges().listen(
-      (user) {
-        if (user != null)
-          authSate = AuthSate.signed;
-        else
-          authSate = AuthSate.unsigned;
-
-        notifyListeners();
-      },
-    );
+    _auth.authStateChanges().listen((user) async {
+      if (user != null) {
+        authState = AuthState.signed;
+        final data = await _db.collection('usuarios').doc(user.uid).get();
+        model = UserModel.fromMap(data.data()!);
+      } else {
+        authState = AuthState.unsigned;
+      }
+      notifyListeners();
+    });
   }
 
   Future<void> login(String email, String senha) async {
@@ -50,7 +50,6 @@ class UserController extends ChangeNotifier {
       email: email,
       password: senha,
     );
-    // Próxima etapa, salvar o payload no firestore
     final uid = credentials.user?.uid;
     final data = payload.toMap();
     data['key'] = uid;

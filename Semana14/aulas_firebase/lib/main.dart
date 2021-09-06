@@ -1,11 +1,10 @@
-import 'controllers/user_controller.dart';
-import 'pages/splash_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'controllers/user_controller.dart';
+import 'pages/splash_page.dart';
 
 void main() async {
-  // Garante que as dependências do flutter serão inicializadas antes de executar o runApp
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
@@ -17,12 +16,12 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => UserController(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Diário de Viagens',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.red,
         ),
-        home: SplashPage(),
         debugShowCheckedModeBanner: false,
+        home: SplashPage(),
       ),
     );
   }
